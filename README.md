@@ -4,19 +4,17 @@ A Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése tárgyhoz
 
 ## Tartalom
 
-Grafikus fejlesztés rész:
-* MVVM design pattern
-* Controllers, events
-* Data bindig
-* Commands
-* INotifyPropertyChange, template
-* Dialog
-
-Játékfejlesztés rész:
-* TODO
-
-Egyéb rész:
-* TODO
+- Grafikus fejlesztés rész:
+    - MVVM design pattern
+    - Controllers, events
+    - Data bindig
+    - Commands
+    - INotifyPropertyChange, template
+    - Dialog
+- Játékfejlesztés rész:
+    - TODO
+- Egyéb rész:
+    - TODO
 
 Egyéb anyagok a(z) http://users.nik.uni-obuda.hu/siposm/szgui oldalon.
 
