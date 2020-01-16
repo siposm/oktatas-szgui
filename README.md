@@ -16,7 +16,7 @@ A Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése tárgyhoz
 - Egyéb rész:
     - TODO
 
-Egyéb anyagok a(z) http://users.nik.uni-obuda.hu/siposm/szgui oldalon.
+Egyéb anyagok a(z) http://users.nik.uni-obuda.hu/siposm/szgui oldalon, valamint a tárgy hivatalos oldalán (http://users.nik.uni-obuda.hu/prog4) érhetők el.
 
 ## Használat
 ### Letöltés
