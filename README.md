@@ -1,9 +1,8 @@
-## SzGUI - Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése
+# Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése (SzGUI)
 
 A Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése tárgyhoz tartozó laboranyagok.
 
-## Tartalom
-
+## TARTALOM
 - Grafikus fejlesztés rész:
     - MVVM design pattern
     - Controllers, events
@@ -18,19 +17,53 @@ A Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése tárgyhoz
 
 Egyéb anyagok a(z) http://users.nik.uni-obuda.hu/siposm/szgui oldalon, valamint a tárgy hivatalos oldalán (http://users.nik.uni-obuda.hu/prog4) érhetők el.
 
-## Használat
-### Letöltés
-Clone gomb alatt a felhőre katt, mentés a kiválaszott állományban.
-
-### Git
-Töltsd le, telepítsd, indítsd el: https://git-scm.com/downloads
+## HASZNÁLAT
+**Letöltés**: Clone gomb alatt a felhőre katt, mentés a kiválaszott állományban. **Git**: Töltsd le, telepítsd, indítsd el: https://git-scm.com/downloads
     
 `cd ~/Desktop/`\
 `mkdir szgui-laboranyag`\
 `cd szgui-laboranyag`\
 `git clone https://gitlab.com/siposm/oktatas-szgui-19202.git`
 
+## FÉLÉVES FELADAT
+A következő információk a prog4 oldalon található **előadás intro** diából van! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
+
+### Követelmény heti bontásban
+-	01. hét	:	Csapatok
+-	02. hét	:	Téma
+-	03. hét	:	
+-	04. hét	:	Use Case, Wireframe, Concept Art + Game Design Document (PONTOS szabályok)
+-	05. hét	:	
+-	06. hét	:	Component, Sequence Diagram + Interfaces (Model, Logic, Repository)
+-	07. hét	:	
+-	08. hét	:	
+-	09. hét	:	Repository, GameModel + GameLogic/Tests
+-	10. hét	:	
+-	11. hét	:	GameControl + GameLogic/Tests
+-	12. hét	:	
+-	13. hét	:	Code Freeze + Videós prezentáció + Dokumentáció
+
+
+### Szabályok / elvárások
+- Ugyanúgy GIT/Bitbucket segítségével
+    - Valid GITSTATS szükséges: Stylecop, Doxygen, minimum 10 valid teszt (mocked GameModel nem kell, mocked repository igen)
+    - Több branch!
+- 4-6 perces gameplay videó készítése is elvárás, ezt lejátszva szóban prezentálunk (https://obsproject.com/download)
+    - Játékszabályok, játékmenet
+    - Mire vagyunk a legbüszkébbek (nehézség/kód/funkció)
+    - A játékmenet után lehet kód screenshot, ha ki akarjuk emelni
+- PDF Dokumentáció
+    - PONTOSAN 5 SOR: rövid leírás, angolul
+    - Specifikáció (GDD)
+    - Diagramok, interfészek, osztályok
+    - Screenshotok
+
+
+
+<br>
+
 ---
+<br>
 
 Meglátás / észrevétel / probléma esetén megtalálható vagyok az alábbi elérhetőségen.
 
