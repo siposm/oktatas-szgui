@@ -1,4 +1,4 @@
-## SzGUI
+## SzGUI - Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése
 
 A Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése tárgyhoz tartozó laboranyagok.
 
@@ -13,6 +13,9 @@ Grafikus fejlesztés rész:
 * Dialog
 
 Játékfejlesztés rész:
+* TODO
+
+Egyéb rész:
 * TODO
 
 Egyéb anyagok a(z) http://users.nik.uni-obuda.hu/siposm/szgui oldalon.
