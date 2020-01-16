@@ -25,6 +25,14 @@ Egyéb anyagok a(z) http://users.nik.uni-obuda.hu/siposm/szgui oldalon, valamint
 `cd szgui-laboranyag`\
 `git clone https://gitlab.com/siposm/oktatas-szgui-19202.git`
 
+## KÖVETELMÉNYEK
+A következő információk a prog4 oldalon található **előadás intro** diából van! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
+- **csak** 1 db labor zh lesz
+- 1 db elméleti zh **is** lesz
+- féléves feladat go/no-go szinten működik jelen tárgynál is
+- érdemjegy = ROUND( (zh1 + zh2 + vizsgajegy) / 3 )
+- vizsga: szóbeli vizsga az előadások anyagából
+
 ## FÉLÉVES FELADAT
 A következő információk a prog4 oldalon található **előadás intro** diából van! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
 
