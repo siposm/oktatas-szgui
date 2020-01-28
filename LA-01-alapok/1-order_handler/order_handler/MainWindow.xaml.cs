@@ -101,17 +101,9 @@ namespace order_handler
 
         // létrehozunk két vagy több gombot, mindegyiknek ugyan azt az eseményt adjuk meg
         // ezt követően _itt_ vizsgáljuk, hogy "hogyan tovább" >> routed event
+        // SaveBtn_Click-et tehát már nem használjuk
         private void ActionBtn_Click(object sender, RoutedEventArgs e)
         {
-            if ((e.Source as Button).Content.ToString().Contains("XML"))
-                SaveToXML();
-
-            else if ((e.Source as Button).Content.ToString().Contains("TXT"))
-                SaveToTXT();
-        }
-
-        private void SaveToXML()
-        {
             string s = String.Empty;
             try
             {
@@ -120,41 +112,30 @@ namespace order_handler
                 int price = int.Parse(txtPrice.Text);
                 int prepaid = int.Parse(txtPrepaid.Text);
 
-                XDocument xdoc = new XDocument();
-                xdoc.Add(new XElement("root"));
-                xdoc.Root.Add(
-                    new XElement("user", name),
-                    new XElement("price", price),
-                    new XElement("prepaid", prepaid)
-                    );
+                if ((e.Source as Button).Content.ToString().Contains("XML"))
+                {
+                    XDocument xdoc = new XDocument();
+                    xdoc.Add(new XElement("root"));
+                    xdoc.Root.Add(
+                        new XElement("user", name),
+                        new XElement("price", price),
+                        new XElement("prepaid", prepaid)
+                        );
 
-                xdoc.Save("output_as_xml.xml");
+                    xdoc.Save("output_as_xml.xml");
 
-                s = "SAVED XML SUCCESSFULLY";
-            }
-            catch (FormatException ex) { s = "[ERR]: NOT A NUMBER"; }
-            catch (OverflowException ex) { s = "[ERR]: TOO BIG NUMBER"; }
+                    s = "SAVED XML SUCCESSFULLY";
+                }
+                else if ((e.Source as Button).Content.ToString().Contains("TXT"))
+                {
+                    StreamWriter sw = new StreamWriter("order_output.txt");
+                    sw.WriteLine("USER: " + name);
+                    sw.WriteLine("PRICE: " + price + " HUF");
+                    sw.WriteLine("PREPAID: " + prepaid + " HUF");
+                    sw.Close();
 
-            lblResult.Content = s;
-        }
-
-        private void SaveToTXT()
-        {
-            string s = String.Empty;
-            try
-            {
-                //string name = txtName.Text;
-                string name = cmbNameSelector.SelectedItem.ToString();
-                int price = int.Parse(txtPrice.Text);
-                int prepaid = int.Parse(txtPrepaid.Text);
-
-                StreamWriter sw = new StreamWriter("order_output.txt");
-                sw.WriteLine("USER: " + name);
-                sw.WriteLine("PRICE: " + price + " HUF");
-                sw.WriteLine("PREPAID: " + prepaid + " HUF");
-                sw.Close();
-
-                s = "SAVED TXT SUCCESSFULLY";
+                    s = "SAVED TXT SUCCESSFULLY";
+                }
             }
             catch (FormatException ex) { s = "[ERR]: NOT A NUMBER"; }
             catch (OverflowException ex) { s = "[ERR]: TOO BIG NUMBER"; }

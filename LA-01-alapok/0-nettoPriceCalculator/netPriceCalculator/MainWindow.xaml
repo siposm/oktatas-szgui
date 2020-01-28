@@ -18,11 +18,10 @@
         <TextBox x:Name="txtTaxValue" HorizontalAlignment="Left" Height="30" Margin="130,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="254" FontSize="20"/>
 
         <!-- BUTTON -->
-        <Button Content="Számol" Click="CalcBtn_Click" HorizontalAlignment="Left" Margin="389,14,0,0" VerticalAlignment="Top" Width="155" Height="75" FontSize="20"/>
+        <Button Content="Számol" Click="CalcBtn_Click" HorizontalAlignment="Left" Margin="389,14,0,0" VerticalAlignment="Top" Width="155" Height="72" FontSize="20"/>
 
         <!-- RESULT stuff -->
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="48" Margin="389,136,0,0" Stroke="Black" VerticalAlignment="Top" Width="155"/>
-        <Label x:Name="lblResult" HorizontalAlignment="Left" Margin="389,141,0,0" VerticalAlignment="Top" FontSize="20" Height="48" Width="155"/>
+        <Label x:Name="lblResult" HorizontalAlignment="Left" Margin="389,141,0,0" VerticalAlignment="Top" FontSize="20" Height="35" Width="155" Background="#FFFFECB8"/>
         <Label Content="Nettó ár:" HorizontalAlignment="Left" Margin="296,141,0,0" VerticalAlignment="Top" FontSize="20" Height="47"/>
 
     </Grid>
