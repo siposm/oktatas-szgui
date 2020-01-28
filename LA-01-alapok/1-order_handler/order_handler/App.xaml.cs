@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace taxcalculator
+namespace order_handler
 {
     /// <summary>
     /// Interaction logic for App.xaml

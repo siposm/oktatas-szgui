@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taxcalculator", "taxcalculator\taxcalculator.csproj", "{EF382AAE-851C-4A34-A390-34FF0E667837}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "order_handler", "order_handler\order_handler.csproj", "{3ACB5CA7-2BA5-4823-AA3E-729D6CDF25AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF382AAE-851C-4A34-A390-34FF0E667837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF382AAE-851C-4A34-A390-34FF0E667837}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF382AAE-851C-4A34-A390-34FF0E667837}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF382AAE-851C-4A34-A390-34FF0E667837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ACB5CA7-2BA5-4823-AA3E-729D6CDF25AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ACB5CA7-2BA5-4823-AA3E-729D6CDF25AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ACB5CA7-2BA5-4823-AA3E-729D6CDF25AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ACB5CA7-2BA5-4823-AA3E-729D6CDF25AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {229077EA-AB3A-402F-899C-0C8E27886E2B}
+		SolutionGuid = {48C4F684-9960-483B-AF7B-BCB98543393A}
 	EndGlobalSection
 EndGlobal

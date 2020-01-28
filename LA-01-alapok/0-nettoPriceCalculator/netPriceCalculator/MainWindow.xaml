@@ -1,0 +1,29 @@
+﻿<Window x:Class="netPriceCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:netPriceCalculator"
+        mc:Ignorable="d"
+        Title="Nettó ár kalkulátor v1.0" Height="225.513" Width="562.666">
+    <Grid>
+
+        <!-- html-szerű módon tudunk kommentet rakni -->
+        <!-- LABELS -->
+        <Label Content="Bruttó ár:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="ÁFA (%):" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" FontSize="20"/>
+
+        <!-- INPUT FIELDS -->
+        <TextBox x:Name="txtBrutValue" HorizontalAlignment="Left" Height="30" Margin="130,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="254" FontSize="20"/>
+        <TextBox x:Name="txtTaxValue" HorizontalAlignment="Left" Height="30" Margin="130,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="254" FontSize="20"/>
+
+        <!-- BUTTON -->
+        <Button Content="Számol" Click="CalcBtn_Click" HorizontalAlignment="Left" Margin="389,14,0,0" VerticalAlignment="Top" Width="155" Height="75" FontSize="20"/>
+
+        <!-- RESULT stuff -->
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="48" Margin="389,136,0,0" Stroke="Black" VerticalAlignment="Top" Width="155"/>
+        <Label x:Name="lblResult" HorizontalAlignment="Left" Margin="389,141,0,0" VerticalAlignment="Top" FontSize="20" Height="48" Width="155"/>
+        <Label Content="Nettó ár:" HorizontalAlignment="Left" Margin="296,141,0,0" VerticalAlignment="Top" FontSize="20" Height="47"/>
+
+    </Grid>
+</Window>
