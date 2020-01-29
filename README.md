@@ -2,24 +2,24 @@
 
 **< ! >**
 A **Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése** tárgyhoz tartozó laboranyagok hivatalos repója (csak saját kurzus esetén).
-Egyéb anyagok a(z) http://users.nik.uni-obuda.hu/siposm/szgui oldalon, valamint a tárgy hivatalos oldalán (http://users.nik.uni-obuda.hu/prog4) érhetők el.
+Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui), valamint a tárgy hivatalos oldalán (http://users.nik.uni-obuda.hu/prog4) érhetők el.
 **< ! >**
 
 ## TARTALOM
 - Grafikus fejlesztés rész:
-    - MVVM design pattern
     - Controllers, events
     - Data bindig
     - Commands
-    - INotifyPropertyChange, template
+    - INotifyPropertyChange, ItemTemplate
     - Dialog
+	- MVVM design pattern
 - Játékfejlesztés rész:
     - TODO
 - Egyéb rész:
     - TODO
 
 ## HASZNÁLAT
-**Letöltés**: Clone gomb alatt a felhőre katt, mentés a kiválaszott állományban. **Git**: Töltsd le, telepítsd, indítsd el: https://git-scm.com/downloads
+**Letöltés**: Clone gomb alatt a felhőre katt, mentés a kiválaszott állományban. **Git**: Töltsd le (https://git-scm.com/downloads), telepítsd, indítsd el, majd a következő utasításokat hajtsd végre:
     
 `cd ~/Desktop/`\
 `mkdir szgui-laboranyag`\
