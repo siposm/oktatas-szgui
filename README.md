@@ -1,25 +1,25 @@
 # Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése (SzGUI)
 
 **< ! >**
-A *Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése* tárgyhoz tartozó laboranyagok hivatalos repója (csak saját kurzus esetén).
-Egyéb anyagok a(z) http://users.nik.uni-obuda.hu/siposm/szgui oldalon, valamint a tárgy hivatalos oldalán (http://users.nik.uni-obuda.hu/prog4) érhetők el.
+A **Szoftvertechnológia és Grafikus Felhasználói Felület Tervezése** tárgyhoz tartozó laboranyagok hivatalos repója (csak saját kurzus esetén).
+Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui), valamint a tárgy hivatalos oldalán (http://users.nik.uni-obuda.hu/prog4) érhetők el.
 **< ! >**
 
 ## TARTALOM
 - Grafikus fejlesztés rész:
-    - MVVM design pattern
     - Controllers, events
     - Data bindig
     - Commands
-    - INotifyPropertyChange, template
+    - INotifyPropertyChange, ItemTemplate
     - Dialog
+	- MVVM design pattern
 - Játékfejlesztés rész:
     - TODO
 - Egyéb rész:
     - TODO
 
 ## HASZNÁLAT
-**Letöltés**: Clone gomb alatt a felhőre katt, mentés a kiválaszott állományban. **Git**: Töltsd le, telepítsd, indítsd el: https://git-scm.com/downloads
+**Letöltés**: "Web IDE" gomb mellett a nyílra katt, majd mentés a kiválaszott állományban. **Git**: Töltsd le (https://git-scm.com/downloads), telepítsd, indítsd el, majd a következő utasításokat hajtsd végre:
     
 `cd ~/Desktop/`\
 `mkdir szgui-laboranyag`\
@@ -27,12 +27,12 @@ Egyéb anyagok a(z) http://users.nik.uni-obuda.hu/siposm/szgui oldalon, valamint
 `git clone https://gitlab.com/siposm/oktatas-szgui-19202.git`
 
 ## KÖVETELMÉNYEK
-A következő információk a prog4 oldalon található **előadás intro** diából van! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
-- **csak** 1 db labor zh lesz
+A következő információk a prog4 oldalon található **előadás intro** diából vannak! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
+- 2 db labor zh
 - 1 db elméleti zh **is** lesz
-- féléves feladat go/no-go szinten működik jelen tárgynál is
+- féléves feladat true / false szinten működik
+- vizsga: feltétele aláírás megszerzése, majd szóbeli vizsga az előadások anyagából
 - érdemjegy = ROUND( (zh1 + zh2 + vizsgajegy) / 3 )
-- vizsga: szóbeli vizsga az előadások anyagából
 
 ## FÉLÉVES FELADAT
 A következő információk a prog4 oldalon található **előadás intro** diából van! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
