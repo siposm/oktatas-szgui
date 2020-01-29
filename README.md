@@ -19,7 +19,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
     - TODO
 
 ## HASZNÁLAT
-**Letöltés**: Clone gomb alatt a felhőre katt, mentés a kiválaszott állományban. **Git**: Töltsd le (https://git-scm.com/downloads), telepítsd, indítsd el, majd a következő utasításokat hajtsd végre:
+**Letöltés**: "Web IDE" gomb mellett a nyílra katt, majd mentés a kiválaszott állományban. **Git**: Töltsd le (https://git-scm.com/downloads), telepítsd, indítsd el, majd a következő utasításokat hajtsd végre:
     
 `cd ~/Desktop/`\
 `mkdir szgui-laboranyag`\
