@@ -1,0 +1,15 @@
+﻿<Window x:Class="basic_databinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:basic_databinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="337.269" Width="800">
+    <Grid>
+        <TextBox Text="{Binding Name}" Margin="242,124,199,123"></TextBox>
+        <Label Content="{Binding Name}" FontSize="30" Margin="0,0,0,187" Background="#FFC8F78E"></Label>
+        <Label Content="{Binding Age}" FontSize="30" Margin="0,188,0,0" Background="#FFF7AAAA"></Label>
+        <Button Click="UpdateClick" Content="UPDATE" HorizontalAlignment="Left" Margin="598,124,0,0" VerticalAlignment="Top" Width="79" Height="59"/>
+    </Grid>
+</Window>
