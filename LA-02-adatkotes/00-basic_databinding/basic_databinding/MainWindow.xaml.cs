@@ -16,37 +16,36 @@ using System.Windows.Shapes;
 
 namespace basic_databinding
 {
-    public class Person : INotifyPropertyChanged
+    public class Person //: INotifyPropertyChanged
     {
 
-        //public string Name { get; set; }
-        //public string Age { get; set; }
-
+        public string Name { get; set; }
+        public string Age { get; set; }
 
         #region interface-megvalositas
-        public event PropertyChangedEventHandler PropertyChanged;
+        //public event PropertyChangedEventHandler PropertyChanged;
 
-        private string name;
-        public string Name
-        {
-            get { return name; }
-            set
-            {
-                name = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Name"));
-            }
-        }
+        //private string name;
+        //public string Name
+        //{
+        //    get { return name; }
+        //    set
+        //    {
+        //        name = value;
+        //        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Name"));
+        //    }
+        //}
 
-        private string age;
-        public string Age
-        {
-            get { return age; }
-            set
-            {
-                age = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Age"));
-            }
-        }
+        //private string age;
+        //public string Age
+        //{
+        //    get { return age; }
+        //    set
+        //    {
+        //        age = value;
+        //        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Age"));
+        //    }
+        //}
         #endregion
 
     }
