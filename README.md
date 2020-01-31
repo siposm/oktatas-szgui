@@ -19,7 +19,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
     - TODO
 
 ## HASZNÁLAT
-**Letöltés**: "Web IDE" gomb mellett a nyílra katt, majd mentés a kiválaszott állományban. **Git**: Töltsd le (https://git-scm.com/downloads), telepítsd, indítsd el, majd a következő utasításokat hajtsd végre:
+**Letöltés**: "Web IDE" gomb mellett a lefele nyílra katt, majd mentés a kiválaszott állományban. **Git**: Töltsd le (https://git-scm.com/downloads), telepítsd (git bash), indítsd el, majd a következő utasításokat hajtsd végre:
     
 `cd ~/Desktop/`\
 `mkdir szgui-laboranyag`\
@@ -28,9 +28,8 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 
 ## KÖVETELMÉNYEK
 A következő információk a prog4 oldalon található **előadás intro** diából vannak! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
-- 2 db labor zh
-- 1 db elméleti zh **is** lesz
-- féléves feladat true / false szinten működik
+- 2 db labor zh *(korábbi félévekben 1 db lab zh és 1 db elm zh, de most változott)*
+- féléves feladat true/false szinten működik
 - vizsga: feltétele aláírás megszerzése, majd szóbeli vizsga az előadások anyagából
 - érdemjegy = ROUND( (zh1 + zh2 + vizsgajegy) / 3 )
 
@@ -38,9 +37,9 @@ A következő információk a prog4 oldalon található **előadás intro** diá
 A következő információk a prog4 oldalon található **előadás intro** diából van! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
 
 ### Követelmény heti bontásban
--	01. hét	:	Csapatok
--	02. hét	:	Téma
--	03. hét	:	
+-	01. hét	:	
+-	02. hét	:	Csapatok kisorsolása (hétvégén a labvez által)
+-	03. hét	:	Téma meghatározása (hallgatói csapat által)
 -	04. hét	:	Use Case, Wireframe, Concept Art + Game Design Document (PONTOS szabályok)
 -	05. hét	:	
 -	06. hét	:	Component, Sequence Diagram + Interfaces (Model, Logic, Repository)
