@@ -13,7 +13,7 @@ namespace StudentBook
         public DateTime? EnrollmentDate { get; set; } // add nullable option
         public bool IsActive { get; set; }
 
-        // tostring nem ideális... >> itemtemplate teljes adatkötéshez
+        // tostring nem ideális... >> itemtemplate "teljes" adatkötéshez
         public override string ToString()
         {
             string s = $"{Name} - [{NeptunCode}] : ";
