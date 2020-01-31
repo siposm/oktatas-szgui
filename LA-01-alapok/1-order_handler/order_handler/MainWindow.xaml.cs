@@ -74,29 +74,29 @@ namespace order_handler
 
 
         // külön save buttonnal mentünk (ekkor még csak txt-be írunk)
-        private void SaveBtn_Click(object sender, RoutedEventArgs e)
-        {
-            string s = String.Empty;
-            try
-            {
-                //string name = txtName.Text;
-                string name = cmbNameSelector.SelectedItem.ToString();
-                int price = int.Parse(txtPrice.Text);
-                int prepaid = int.Parse(txtPrepaid.Text);
+        //private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        //{
+        //    string s = String.Empty;
+        //    try
+        //    {
+        //        //string name = txtName.Text;
+        //        string name = cmbNameSelector.SelectedItem.ToString();
+        //        int price = int.Parse(txtPrice.Text);
+        //        int prepaid = int.Parse(txtPrepaid.Text);
 
-                StreamWriter sw = new StreamWriter("order_output.txt");
-                sw.WriteLine("USER: " + name);
-                sw.WriteLine("PRICE: " + price + " HUF");
-                sw.WriteLine("PREPAID: " + prepaid + " HUF");
-                sw.Close();
+        //        StreamWriter sw = new StreamWriter("order_output.txt");
+        //        sw.WriteLine("USER: " + name);
+        //        sw.WriteLine("PRICE: " + price + " HUF");
+        //        sw.WriteLine("PREPAID: " + prepaid + " HUF");
+        //        sw.Close();
 
-                s = "SAVED TXT SUCCESSFULLY";
-            }
-            catch (FormatException ex) { s = "[ERR]: NOT A NUMBER"; }
-            catch (OverflowException ex) { s = "[ERR]: TOO BIG NUMBER"; }
+        //        s = "SAVED TXT SUCCESSFULLY";
+        //    }
+        //    catch (FormatException ex) { s = "[ERR]: NOT A NUMBER"; }
+        //    catch (OverflowException ex) { s = "[ERR]: TOO BIG NUMBER"; }
 
-            lblResult.Content = s;
-        }
+        //    lblResult.Content = s;
+        //}
 
 
         // létrehozunk két vagy több gombot, mindegyiknek ugyan azt az eseményt adjuk meg

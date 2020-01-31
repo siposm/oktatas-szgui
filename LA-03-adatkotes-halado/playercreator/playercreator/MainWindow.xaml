@@ -1,0 +1,55 @@
+﻿<Window x:Class="playercreator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:playercreator"
+        
+        xmlns:local2="clr-namespace:playercreator.ViewModel"
+        
+        mc:Ignorable="d"
+        Title="Player Manager" Height="657" Width="594.5">
+
+    <Window.Resources>
+        <local2:MainWindowViewModel x:Key="my_viewmodel"></local2:MainWindowViewModel>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <Button Click="LoadXMLClick" Content="LOAD FROM XML" Height="40" Margin="10"></Button>
+            <Button Click="LoadJSONClick" Content="LOAD FROM JSON" Height="40" Margin="10"></Button>
+            <Label Content="--------------" HorizontalAlignment="Center"></Label>
+            <Button IsEnabled="False" Content="ADD NEW" Height="40" Margin="10"></Button>
+            <Button IsEnabled="False" Content="MODIFY SELECTED" Height="40" Margin="10"></Button>
+            <Button Click="RemoveClick" Content="REMOVE SELECTED" Height="40" Margin="10"></Button>
+            <Button Click="ExportClick" Content="EXPORT TO JSON" Height="40" Margin="10"></Button>
+            <Label Content="--------------" HorizontalAlignment="Center"></Label>
+            <Button Click="OrderAscClick" Content="NAME ASC" Margin="10"></Button>
+            <Button Click="OrderDescClick" Content="NAME DESC" Margin="10"></Button>
+            <Label Content="--------------" HorizontalAlignment="Center"></Label>
+            <Button Click="TopKillsClick" Content="TOP 10 KILLS" Height="40" Margin="10"></Button>
+            <Label Content="{Binding MaxKillCountValue}" ContentStringFormat="Max kill value: {0}" HorizontalAlignment="Center"></Label>
+        </StackPanel>
+        
+        <ListBox Grid.Column="1" x:Name="ListboxPlayers" ItemsSource="{Binding PlayerList}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label FontWeight="ExtraBold" Content="{Binding Name}"></Label>
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <Label Content="{Binding ID}" ContentStringFormat="# {0}"></Label>
+                            <CheckBox IsEnabled="False" IsChecked="{Binding IsActive}" Margin="5"></CheckBox>
+                            <ProgressBar Value="{Binding KillCount, Mode=OneWay}" Height="5" Width="100" Margin="5" Minimum="0" Maximum="1000"></ProgressBar>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
+
