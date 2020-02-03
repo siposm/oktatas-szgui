@@ -50,9 +50,17 @@ namespace folderlister.BusinessLogic
                 window.Show();
             }
             else
-            {
                 System.Diagnostics.Process.Start(entry.Name);
-            }
+        }
+
+        public void LogCurrent(string currentDirectory)
+        {
+            StreamWriter sw = new StreamWriter("current_subfolders_and_files.txt");
+            foreach (string subDir in Directory.GetDirectories(currentDirectory))
+                sw.WriteLine("[DIR]\t" + subDir);
+            foreach (string file in Directory.GetFiles(currentDirectory))
+                sw.WriteLine("[FILE]\t" + file);
+            sw.Close();
         }
     }
 }

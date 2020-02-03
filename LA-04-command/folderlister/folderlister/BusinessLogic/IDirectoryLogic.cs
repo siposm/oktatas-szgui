@@ -12,5 +12,7 @@ namespace folderlister.BusinessLogic
         IEnumerable<DirectoryEntry> CollectDirectoryEntries(string currentDirectory);
 
         void SelectEntry(DirectoryEntry entry);
+
+        void LogCurrent(string currentDirectory);
     }
 }

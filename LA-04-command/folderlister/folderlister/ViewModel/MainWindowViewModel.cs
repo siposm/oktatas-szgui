@@ -18,27 +18,31 @@ namespace folderlister.ViewModel
         public IEnumerable<DirectoryEntry> Entries { get; private set; }
         public string CurrentDirectory { get; private set; }
         public ICommand SelectEntryCommand { get; private set; }
+        public ICommand LogCurrentCommand { get; private set; }
 
         // PUBLIC SETTER IN VM = DANGER
         // NOT DISPLAYED IN WINDOW = NO PROBLEM
         public DirectoryEntry SelectedEntry { get; set; }
 
-        public MainWindowViewModel(
-            IDirectoryLogic directoryLogic,
-            string currentDirectory)
+        public MainWindowViewModel(IDirectoryLogic directoryLogic, string currentDirectory)
         {
             this.directoryLogic = directoryLogic;
             CurrentDirectory = currentDirectory;
 
             Entries = directoryLogic.CollectDirectoryEntries(currentDirectory);
 
-            SelectEntryCommand = new RelayCommand( () => {
-                    this.directoryLogic.SelectEntry(SelectedEntry); // MUST reference the datafield!
-                });
+            SelectEntryCommand = new RelayCommand(() => 
+            {
+               this.directoryLogic.SelectEntry(SelectedEntry); // MUST reference the datafield!
+            });
+
+            LogCurrentCommand = new RelayCommand(() =>
+            {
+                this.directoryLogic.LogCurrent(currentDirectory);
+            });
         }
 
-        public MainWindowViewModel(string currentDirectory)
-            : this(new DirectoryLogic(), currentDirectory)
+        public MainWindowViewModel(string currentDirectory) : this(new DirectoryLogic(), currentDirectory)
         {
         }
     }

@@ -15,6 +15,7 @@ namespace folderlister.Model
         {
             return IsDir ? String.Format("[{0}]", Name) : Name;
         }
+
         public DirectoryEntry(string name, bool dir)
         {
             Name = name; IsDir = dir;
