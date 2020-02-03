@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:folderlister"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        
+        d:DataContext="{d:DesignInstance Type={x:Type local:MainWindowViewModel}}"
+        
+        Title="{Binding CurrentDirectory}" Height="367.5" Width="383">
     <Grid>
         
     </Grid>
