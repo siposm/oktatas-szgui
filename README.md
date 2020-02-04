@@ -17,6 +17,42 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
     - TODO
 - Egyéb rész:
     - TODO
+	
+## KULCSSZAVAS KIVONAT
+- LA01
+	- WPF felépítése
+	- alap vezérlőszerkezetek
+	- gombok (click event)
+	- XAML
+	- események (routed events)
+- LA02
+	- adatkötés alapok (data binding)
+	- object + listbox binding
+	- grid (columndefinitions + rowdefinitions)
+	- multiple window layout
+- LA03
+	- MVVM (mvvmlightlibs) bevezető
+	- viewmodel használat
+	- model használat
+	- observable collection (adatkötés haladó (data bindig))
+	- itemtemplate / datatemplate (listbox)
+	- ViewModelBase (~INotifyPropertyChange)
+- LA04
+	- design-time datacontext
+	- mouse double click event
+	- command binding (click event helyett)
+	- business logic használat (+ model + viewmodel)
+- LA05
+- LA06
+- LA07
+- LA08
+- LA09
+- LA10
+- LA11
+- LA12
+- LA13
+- LA14
+
 
 ## HASZNÁLAT
 **Letöltés**: "Web IDE" gomb mellett a lefele nyílra katt, majd mentés a kiválaszott állományban. **Git**: Töltsd le (https://git-scm.com/downloads), telepítsd (git bash), indítsd el, majd a következő utasításokat hajtsd végre:
