@@ -117,6 +117,5 @@ Tanszéki Mérnök\
 sipos.miklos@nik.uni-obuda.hu\
 Óbudai Egyetem Neumann János Informatikai Kar\
 Szoftvertervezés és -Fejlesztés Intézet\
-2019 - 2020 - 2 félév\
-(C)
+2019 - 2020 - 2. félév\
 
