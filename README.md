@@ -27,8 +27,8 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 	- események (routed events)
 - LA02
 	- adatkötés alapok (data binding)
-	- object + listbox binding
-	- grid (columndefinitions + rowdefinitions)
+	- object & listbox binding
+	- grid layout (columndefinitions & rowdefinitions)
 	- multiple window layout
 - LA03
 	- MVVM (mvvmlightlibs) bevezető
@@ -41,7 +41,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 	- design-time datacontext
 	- mouse double click event
 	- command binding (click event helyett)
-	- business logic használat (+ model + viewmodel)
+	- business logic használat (& model & viewmodel)
 - LA05
 - LA06
 - LA07
@@ -116,6 +116,6 @@ Meglátás / észrevétel / probléma esetén megtalálható vagyok az alábbi e
 Tanszéki Mérnök\
 sipos.miklos@nik.uni-obuda.hu\
 Óbudai Egyetem Neumann János Informatikai Kar\
-Szoftvertervezés és -Fejlesztés Intézet\
+Szoftvertervezés és -fejlesztés Intézet\
 2019 - 2020 - 2. félév\
 
