@@ -21,7 +21,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 ## KULCSSZAVAS KIVONAT
 - LA01
 	- WPF felépítése
-	- alap vezérlőszerkezetek
+	- alap vezérlőszerkezetek (textbox, listbox, label, button)
 	- gombok (click event)
 	- XAML
 	- események (routed events)
