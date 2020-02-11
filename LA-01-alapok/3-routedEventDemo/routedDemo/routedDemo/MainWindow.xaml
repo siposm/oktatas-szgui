@@ -1,0 +1,45 @@
+﻿<Window x:Class="routedDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:routedDemo"
+        mc:Ignorable="d"
+        Title="Routed Demo Window" Height="350.308" Width="911.999"
+        MouseDown="Window_MouseDown">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition> 
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Parasite" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="0" Grid.Column="1" Content="Castle Rock" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="0" Grid.Column="2" Content="Megszállottak viadala" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="0" Grid.Column="3" Content="Into the Dark" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Tolvajok az erdőből" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="1" Grid.Column="1" Content="Terror" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="1" Grid.Column="2" Content="The Purge" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="1" Grid.Column="3" Content="Black Lightning" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Cobra Kai" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="2" Grid.Column="1" Content="Elit" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="2" Grid.Column="2" Content="Aljas John" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="2" Grid.Column="3" Content="Legacies: A sötétség öröksége" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Valós halál" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="3" Grid.Column="1" Content="Sabrina hátborzongató kalandjai" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="3" Grid.Column="2" Content="Lost in Space - Elveszve az űrben" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Label Grid.Row="3" Grid.Column="3" Content="Diablero" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+    </Grid>
+</Window>

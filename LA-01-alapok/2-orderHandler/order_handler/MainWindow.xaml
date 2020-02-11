@@ -33,7 +33,8 @@
 
         <!-- BUTTONS -->
         <Button Content="CALC" Click="CalcBtn_Click" HorizontalAlignment="Left" Margin="389,14,0,0" VerticalAlignment="Top" Width="75" Height="114" FontSize="20"/>
-        <!--<Button Content="SAVE" Click="SaveBtn_Click" HorizontalAlignment="Left" Margin="469,14,0,0" VerticalAlignment="Top" Width="75" Height="52" FontSize="15"/>-->
+        <!--<Button Content="TO TXT" Click="ToTxtBtn_Click" HorizontalAlignment="Left" Margin="469,14,0,0" VerticalAlignment="Top" Width="75" Height="52" FontSize="15"/>-->
+        <!--<Button Content="TO XML" Click="ToXmlBtn_Click" HorizontalAlignment="Left" Margin="469,14,0,0" VerticalAlignment="Top" Width="75" Height="52" FontSize="15"/>-->
         <Button Content="TO XML" Click="ActionBtn_Click" HorizontalAlignment="Left" Margin="469,14,0,0" VerticalAlignment="Top" Width="75" Height="52" FontSize="15"/>
         <Button Content="TO TXT" Click="ActionBtn_Click" HorizontalAlignment="Left" Margin="469,76,0,0" VerticalAlignment="Top" Width="75" Height="52" FontSize="15"/>
 

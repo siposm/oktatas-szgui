@@ -73,36 +73,65 @@ namespace order_handler
             MessageBox.Show(s);
         }
 
+        #region SeparateButtonToSave
+        // külön buttonnal mentünk txt-be
+        private void ToTxtBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string s = String.Empty;
+            try
+            {
+                //string name = txtName.Text;
+                string name = cmbNameSelector.Text;
+                int price = int.Parse(txtPrice.Text);
+                int prepaid = int.Parse(txtPrepaid.Text);
 
-        // külön save buttonnal mentünk (ekkor még csak txt-be írunk)
-        //private void SaveBtn_Click(object sender, RoutedEventArgs e)
-        //{
-        //    string s = String.Empty;
-        //    try
-        //    {
-        //        //string name = txtName.Text;
-        //        string name = cmbNameSelector.Text;
-        //        int price = int.Parse(txtPrice.Text);
-        //        int prepaid = int.Parse(txtPrepaid.Text);
+                StreamWriter sw = new StreamWriter("order_output.txt");
+                sw.WriteLine("USER: " + name);
+                sw.WriteLine("PRICE: " + price + " HUF");
+                sw.WriteLine("PREPAID: " + prepaid + " HUF");
+                sw.Close();
 
-        //        StreamWriter sw = new StreamWriter("order_output.txt");
-        //        sw.WriteLine("USER: " + name);
-        //        sw.WriteLine("PRICE: " + price + " HUF");
-        //        sw.WriteLine("PREPAID: " + prepaid + " HUF");
-        //        sw.Close();
+                s = "SAVED TXT SUCCESSFULLY";
+            }
+            catch (FormatException ex) { s = "[ERR]: NOT A NUMBER"; }
+            catch (OverflowException ex) { s = "[ERR]: TOO BIG NUMBER"; }
 
-        //        s = "SAVED TXT SUCCESSFULLY";
-        //    }
-        //    catch (FormatException ex) { s = "[ERR]: NOT A NUMBER"; }
-        //    catch (OverflowException ex) { s = "[ERR]: TOO BIG NUMBER"; }
+            lblResult.Content = s;
+        }
+        
+        // külön buttonnal mentünk txt-be
+        private void ToXmlBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string s = String.Empty;
+            try
+            {
+                //string name = txtName.Text;
+                string name = cmbNameSelector.Text;
+                int price = int.Parse(txtPrice.Text);
+                int prepaid = int.Parse(txtPrepaid.Text);
 
-        //    lblResult.Content = s;
-        //}
+                XDocument xdoc = new XDocument();
+                xdoc.Add(new XElement("root"));
+                xdoc.Root.Add(
+                    new XElement("user", name),
+                    new XElement("price", price),
+                    new XElement("prepaid", prepaid)
+                    );
 
+                xdoc.Save("output_as_xml.xml");
+
+                s = "SAVED XML SUCCESSFULLY";
+            }
+            catch (FormatException ex) { s = "[ERR]: NOT A NUMBER"; }
+            catch (OverflowException ex) { s = "[ERR]: TOO BIG NUMBER"; }
+
+            lblResult.Content = s;
+        }
+        #endregion
 
         // létrehozunk két vagy több gombot, mindegyiknek ugyan azt az eseményt adjuk meg
-        // ezt követően _itt_ vizsgáljuk, hogy "hogyan tovább" >> routed event
-        // SaveBtn_Click-et tehát már nem használjuk
+        // ezt követően _itt_ vizsgáljuk, hogy "hogyan tovább"
+        // A verzió: berakom egyből ide a SW és XDOC kódokat...
         private void ActionBtn_Click(object sender, RoutedEventArgs e)
         {
             string s = String.Empty;
@@ -143,6 +172,16 @@ namespace order_handler
             catch (OverflowException ex) { s = "[ERR]: TOO BIG NUMBER"; }
 
             lblResult.Content = s;
+        }
+
+        // B verzió: továbbhívjuk a régi metódusokat
+        private void ActionBtn_Click_v2(object sender, RoutedEventArgs e)
+        {
+            if ((e.Source as Button).Content.ToString().Contains("XML"))
+                ToXmlBtn_Click(sender, e);
+
+            else if ((e.Source as Button).Content.ToString().Contains("XML"))
+                ToTxtBtn_Click(sender, e);
         }
     }
 }
