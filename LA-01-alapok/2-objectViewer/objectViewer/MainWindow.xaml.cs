@@ -58,7 +58,6 @@ namespace objectViewer
 
         public void AddGradeToStudent(Student s) { }
     }
-    #endregion
 
     [ToDetect]
     class Student : Character
@@ -70,6 +69,9 @@ namespace objectViewer
 
         public void TakeCourse(int lessonNumber) { }
     }
+    #endregion
+
+
 
 
 
