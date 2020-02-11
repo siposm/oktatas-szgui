@@ -49,7 +49,8 @@ namespace order_handler
             try
             {
                 //string name = txtName.Text;
-                string name = cmbNameSelector.SelectedItem.ToString();
+                //string name = cmbNameSelector.SelectedItem.ToString();
+                string name = cmbNameSelector.Text;
                 int price = int.Parse(txtPrice.Text);
                 int prepaid = int.Parse(txtPrepaid.Text);
                 string coupon = txtCoupon.Text;
@@ -80,7 +81,7 @@ namespace order_handler
         //    try
         //    {
         //        //string name = txtName.Text;
-        //        string name = cmbNameSelector.SelectedItem.ToString();
+        //        string name = cmbNameSelector.Text;
         //        int price = int.Parse(txtPrice.Text);
         //        int prepaid = int.Parse(txtPrepaid.Text);
 
@@ -108,7 +109,8 @@ namespace order_handler
             try
             {
                 //string name = txtName.Text;
-                string name = cmbNameSelector.SelectedItem.ToString();
+                //string name = cmbNameSelector.SelectedItem.ToString();
+                string name = cmbNameSelector.Text;
                 int price = int.Parse(txtPrice.Text);
                 int prepaid = int.Parse(txtPrepaid.Text);
 
