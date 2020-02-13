@@ -67,7 +67,7 @@ A következő információk a prog4 oldalon található **előadás intro** diá
 - 2 db labor zh *(korábbi félévekben 1 db lab zh és 1 db elm zh, de most változott)*
 - féléves feladat true/false szinten működik
 - vizsga: feltétele aláírás megszerzése, majd szóbeli vizsga az előadások anyagából
-- érdemjegy = ROUND( (zh1 + zh2 + vizsgajegy) / 3 )
+- érdemjegy = ROUND( (zh1 + zh2 + (2 x vizsgajegy)) / 4 )
 
 ## FÉLÉVES FELADAT
 A következő információk a prog4 oldalon található **előadás intro** diából van! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
@@ -92,7 +92,7 @@ A következő információk a prog4 oldalon található **előadás intro** diá
 - Ugyanúgy GIT/Bitbucket segítségével
     - Valid GITSTATS szükséges: Stylecop, Doxygen, minimum 10 valid teszt (mocked GameModel nem kell, mocked repository igen)
     - Több branch!
-- 4-6 perces gameplay videó készítése is elvárás, ezt lejátszva szóban prezentálunk (https://obsproject.com/download)
+- egy 4-6 perces gameplay videó készítése is elvárás, ezt lejátszva szóban prezentálunk (https://obsproject.com/download)
     - Játékszabályok, játékmenet
     - Mire vagyunk a legbüszkébbek (nehézség/kód/funkció)
     - A játékmenet után lehet kód screenshot, ha ki akarjuk emelni
