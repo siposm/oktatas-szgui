@@ -67,7 +67,7 @@ A következő információk a prog4 oldalon található **előadás intro** diá
 - 2 db labor zh *(korábbi félévekben 1 db lab zh és 1 db elm zh, de most változott)*
 - féléves feladat true/false szinten működik
 - vizsga: feltétele aláírás megszerzése, majd szóbeli vizsga az előadások anyagából
-- érdemjegy = ROUND( (zh1 + zh2 + vizsgajegy) / 3 )
+- érdemjegy = ROUND( (zh1 + zh2 + (2 x vizsgajegy)) / 4 )
 
 ## FÉLÉVES FELADAT
 A következő információk a prog4 oldalon található **előadás intro** diából van! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
