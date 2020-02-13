@@ -92,7 +92,7 @@ A következő információk a prog4 oldalon található **előadás intro** diá
 - Ugyanúgy GIT/Bitbucket segítségével
     - Valid GITSTATS szükséges: Stylecop, Doxygen, minimum 10 valid teszt (mocked GameModel nem kell, mocked repository igen)
     - Több branch!
-- 4-6 perces gameplay videó készítése is elvárás, ezt lejátszva szóban prezentálunk (https://obsproject.com/download)
+- egy 4-6 perces gameplay videó készítése is elvárás, ezt lejátszva szóban prezentálunk (https://obsproject.com/download)
     - Játékszabályok, játékmenet
     - Mire vagyunk a legbüszkébbek (nehézség/kód/funkció)
     - A játékmenet után lehet kód screenshot, ha ki akarjuk emelni
