@@ -19,6 +19,11 @@ namespace StudentBook
     /// </summary>
     public partial class StudentBindingWindow : Window
     {
+        // (A) verzió
+        //public Student Student { get; set; }
+
+        // (B) verzió
+        // ebben az esetben kell a XAML-t is módosítani !!!
         public Student Student
         {
             get { return this.DataContext as Student; }

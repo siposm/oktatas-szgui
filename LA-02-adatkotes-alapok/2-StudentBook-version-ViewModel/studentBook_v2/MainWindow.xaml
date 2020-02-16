@@ -1,14 +1,12 @@
-﻿<Window x:Class="StudentBook.MainWindow"
+﻿<Window x:Class="studentBook_v2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:StudentBook"
+        xmlns:local="clr-namespace:studentBook_v2"
         mc:Ignorable="d"
         Title="StudentBook" Height="600" Width="540"
-        
-        ResizeMode="NoResize"
-        >
+        ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"></ColumnDefinition>
@@ -22,8 +20,8 @@
             <Button Click="PurClick" Content="PURGE" Margin="10" Height="40" FontSize="20" Background="#FFFF3F3F" BorderBrush="#FFBB0000" Foreground="White" FontWeight="Bold"></Button>
         </StackPanel>
 
-        <ListBox x:Name="StudentListBox" Grid.Column="1" FontSize="20">
-            
+        <ListBox ItemsSource="{Binding Students}" SelectedItem="{Binding SelectedStudent}" Grid.Column="1" FontSize="20">
+
         </ListBox>
     </Grid>
 </Window>

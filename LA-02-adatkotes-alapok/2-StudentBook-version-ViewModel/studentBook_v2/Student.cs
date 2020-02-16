@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentBook
+namespace studentBook_v2
 {
     public class Student
     {
@@ -17,7 +17,7 @@ namespace StudentBook
         public override string ToString()
         {
             string s = $"{Name} - [{NeptunCode}] : ";
-            
+
             if (IsActive)
                 s += "currently active";
             else
