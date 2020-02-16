@@ -16,38 +16,10 @@ using System.Windows.Shapes;
 
 namespace basic_databinding
 {
-    public class Person //: INotifyPropertyChanged
+    public class Person
     {
-
-        public string Name { get; set; }
-        public string Age { get; set; }
-
-        #region interface-megvalositas
-        //public event PropertyChangedEventHandler PropertyChanged;
-
-        //private string name;
-        //public string Name
-        //{
-        //    get { return name; }
-        //    set
-        //    {
-        //        name = value;
-        //        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Name"));
-        //    }
-        //}
-
-        //private string age;
-        //public string Age
-        //{
-        //    get { return age; }
-        //    set
-        //    {
-        //        age = value;
-        //        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Age"));
-        //    }
-        //}
-        #endregion
-
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 
     /// <summary>
@@ -62,17 +34,16 @@ namespace basic_databinding
         {
             InitializeComponent();
 
-            MyPerson = new Person();
-            MyPerson.Name = "Hi, I'm the Test Person.";
-            MyPerson.Age = "... and I'm 20 yo.";
+            MyPerson = new Person() { FirstName = "Teszt", LastName = "Elek" };
 
-            this.DataContext = MyPerson;
+            this.DataContext = MyPerson;            
         }
 
         private void UpdateClick(object sender, RoutedEventArgs e)
         {
-            ;
-            // breakpoint >> MyPerson megtekintése >> látható, hogy felül lett írva a név (de ez mégsem jelenik meg a GUI-n...) >> inotify...
+            MessageBox.Show(MyPerson.FirstName + " " + MyPerson.LastName);
+            
+            // breakpoint >> MyPerson megtekintése (keresés) >> látható, hogy felül lett írva a név = ADATKÖTÉS OK
         }
     }
 }

@@ -5,11 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:basic_databinding"
         mc:Ignorable="d"
-        Title="MainWindow" Height="337.269" Width="800">
+        FontSize="25"
+        Title="MainWindow" Height="343.269" Width="800">
     <Grid>
-        <TextBox Text="{Binding Name}" Margin="242,124,199,123"></TextBox>
-        <Label Content="{Binding Name}" FontSize="30" Margin="0,0,0,187" Background="#FFC8F78E"></Label>
-        <Label Content="{Binding Age}" FontSize="30" Margin="0,188,0,0" Background="#FFF7AAAA"></Label>
-        <Button Click="UpdateClick" Content="UPDATE" HorizontalAlignment="Left" Margin="598,124,0,0" VerticalAlignment="Top" Width="79" Height="59"/>
+        <StackPanel>
+            <Label Content="First Name:"></Label>
+            <TextBox Text="{Binding FirstName}"></TextBox>
+
+            <Label Content="Last Name:"></Label>
+            <TextBox Text="{Binding LastName}"></TextBox>
+
+            <Button Click="UpdateClick" Content="click me to show"></Button>
+        </StackPanel>
     </Grid>
 </Window>
