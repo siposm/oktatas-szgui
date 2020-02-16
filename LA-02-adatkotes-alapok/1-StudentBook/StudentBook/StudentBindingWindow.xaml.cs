@@ -19,6 +19,10 @@ namespace StudentBook
     /// </summary>
     public partial class StudentBindingWindow : Window
     {
+        // (A) verzió
+        //public Student Student { get; set; }
+
+        // (B) verzió
         public Student Student
         {
             get { return this.DataContext as Student; }
