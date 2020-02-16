@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentBook"
         mc:Ignorable="d"
-        Title="StudentBook" Height="450" Width="800">
+        Title="StudentBook" Height="500" Width="540"
+        
+        ResizeMode="NoResize"
+        >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"></ColumnDefinition>

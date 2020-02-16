@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,20 +17,23 @@ using System.Windows.Shapes;
 
 namespace StudentBook
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
 
+            //LoadStudentsManually();
+            LoadStudentsFromJson();
+        }
+
+        private void LoadStudentsManually()
+        {
             StudentListBox.Items.Add(new Student()
             {
                 Name = "Kiss Lajos",
                 NeptunCode = "ROF982",
-                EnrollmentDate = new DateTime(2015, 09, 10),
+                EnrollmentYear = 2015,
                 IsActive = false
             });
 
@@ -36,7 +41,7 @@ namespace StudentBook
             {
                 Name = "Tóth Imre",
                 NeptunCode = "BA7AF3",
-                EnrollmentDate = new DateTime(2012, 09, 10),
+                EnrollmentYear = 2012,
                 IsActive = true
             });
 
@@ -44,9 +49,22 @@ namespace StudentBook
             {
                 Name = "Varga Andrea",
                 NeptunCode = "H3LL0C",
-                EnrollmentDate = new DateTime(2014, 09, 10),
+                EnrollmentYear = 2014,
                 IsActive = true
             });
+        }
+
+        private void LoadStudentsFromJson()
+        {
+            string url = "http://users.nik.uni-obuda.hu/siposm/db/students.json";
+
+            WebClient wc = new WebClient();
+            string jsonContent = wc.DownloadString(url);
+            JsonConvert.DeserializeObject<List<Student>>(jsonContent).ForEach( x =>
+            {
+                StudentListBox.Items.Add(x);
+            });
+            
         }
 
         private void AddClick(object sender, RoutedEventArgs e)
