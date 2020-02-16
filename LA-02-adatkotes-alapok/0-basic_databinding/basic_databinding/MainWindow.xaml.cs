@@ -43,7 +43,7 @@ namespace basic_databinding
         {
             MessageBox.Show(MyPerson.FirstName + " " + MyPerson.LastName);
             
-            // breakpoint >> MyPerson megtekintése (keresés) >> látható, hogy felül lett írva a név = ADATKÖTÉS OK
+            // breakpoint >> MyPerson megtekintése >> látható, hogy felül lett írva a név ==> ADATKÖTÉS OK
         }
     }
 }

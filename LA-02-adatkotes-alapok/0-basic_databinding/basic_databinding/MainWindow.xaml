@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:basic_databinding"
         mc:Ignorable="d"
         FontSize="25"
-        Title="MainWindow" Height="343.269" Width="800">
+        Title="MainWindow" Height="274.269" Width="474.5">
     <Grid>
         <StackPanel>
             <Label Content="First Name:"></Label>
@@ -15,7 +15,7 @@
             <Label Content="Last Name:"></Label>
             <TextBox Text="{Binding LastName}"></TextBox>
 
-            <Button Click="UpdateClick" Content="click me to show"></Button>
+            <Button Click="UpdateClick" Content="click me to show" Height="49"></Button>
         </StackPanel>
     </Grid>
 </Window>
