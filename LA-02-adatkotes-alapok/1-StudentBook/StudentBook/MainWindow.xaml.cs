@@ -56,6 +56,8 @@ namespace StudentBook
 
         private void LoadStudentsFromJson()
         {
+            // json class >> nuget >> newtonsoft.json
+
             string url = "http://users.nik.uni-obuda.hu/siposm/db/students.json";
 
             WebClient wc = new WebClient();
@@ -64,13 +66,13 @@ namespace StudentBook
             {
                 StudentListBox.Items.Add(x);
             });
-            
         }
 
         private void AddClick(object sender, RoutedEventArgs e)
         {
             StudentBindingWindow sbw = new StudentBindingWindow();
-            if (sbw.ShowDialog() == true)
+
+            if (sbw.ShowDialog() == true) // modális megjelenítés
                 StudentListBox.Items.Add(sbw.Student);
         }
 

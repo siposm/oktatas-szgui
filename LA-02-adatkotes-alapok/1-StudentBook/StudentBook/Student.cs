@@ -17,6 +17,7 @@ namespace StudentBook
         public override string ToString()
         {
             string s = $"{Name} - [{NeptunCode}] : ";
+            
             if (IsActive)
                 s += "currently active";
             else

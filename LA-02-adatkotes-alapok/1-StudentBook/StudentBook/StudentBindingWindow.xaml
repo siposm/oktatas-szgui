@@ -20,14 +20,14 @@
         <StackPanel Grid.Column="0">
             <Label Content="Full name:" FontSize="20"></Label>
             <Label Content="Neptun code:" FontSize="20"></Label>
-            <Label Content="Enrollment date:" FontSize="20"></Label>
+            <Label Content="Enrollment year:" FontSize="20"></Label>
             <Label Content="Active status:" FontSize="20"></Label>
         </StackPanel>
 
         <StackPanel Grid.Column="1">
             <TextBox Text="{Binding Name}" FontSize="20" Margin="5"></TextBox>
             <TextBox Text="{Binding NeptunCode}" FontSize="20" Margin="5"></TextBox>
-            <DatePicker Text="{Binding EnrollmentDate}" FontSize="15" Margin="5"></DatePicker>
+            <DatePicker Text="{Binding EnrollmentYear}" FontSize="15" Margin="5"></DatePicker>
             <CheckBox IsChecked="{Binding IsActive}" FontSize="20" Margin="5" Content="Is active?"></CheckBox>
             <Button Click="CloseClick" Content="Enroll new student" Height="40" FontSize="20" Margin="20"></Button>
         </StackPanel>
