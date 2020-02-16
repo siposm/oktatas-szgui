@@ -72,16 +72,14 @@ namespace StudentBook
         {
             StudentBindingWindow sbw = new StudentBindingWindow();
 
-            // datacontext állítás (A) verzió:
-            #region a_version
+            #region datacontext állítás (A) verzió:
             //Student s = new Student();
             //sbw.DataContext = s;
             //if (sbw.ShowDialog() == true) // modális megjelenítés
             //    StudentListBox.Items.Add(s);
             #endregion
 
-            // datacontext állítás (B) verzió:
-            #region b_version
+            #region datacontext állítás (B) verzió:
             if (sbw.ShowDialog() == true) // modális megjelenítés
                 StudentListBox.Items.Add(sbw.Student);
             #endregion
@@ -96,9 +94,8 @@ namespace StudentBook
 
             if (window.ShowDialog() == true)
                 MessageBox.Show("OK, modified");
-
             else
-                MessageBox.Show("BUG: cannot cancel a BINDING!!!"); // todo: edit a copy => Prototype design pattern!
+                MessageBox.Show("BUG: cannot cancel a BINDING!!!"); // TODO: edit a copy => Prototype design pattern!
 
             StudentListBox.Items.Refresh(); // később observable collection...
         }
