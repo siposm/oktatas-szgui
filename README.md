@@ -27,9 +27,12 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 	- események (routed events)
 - LA02
 	- adatkötés alapok (data binding)
+	- datacontext (from C#)
+	- datacontext (from XAML)
 	- object & listbox binding
 	- grid layout (columndefinitions & rowdefinitions)
 	- multiple window layout
+	- show dialog (modális megjelenítés)
 - LA03
 	- MVVM (mvvmlightlibs) bevezető
 	- viewmodel használat
