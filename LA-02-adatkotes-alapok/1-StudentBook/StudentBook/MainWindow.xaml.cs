@@ -56,7 +56,7 @@ namespace StudentBook
 
         private void LoadStudentsFromJson()
         {
-            // json class >> nuget >> newtonsoft.json
+            // json convert class >> nuget >> newtonsoft.json
 
             string url = "http://users.nik.uni-obuda.hu/siposm/db/students.json";
 
