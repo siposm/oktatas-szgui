@@ -32,6 +32,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 	- object & listbox binding
 	- grid layout (columndefinitions & rowdefinitions)
 	- multiple window layout
+	- show dialog (modális megjelenítés)
 - LA03
 	- MVVM (mvvmlightlibs) bevezető
 	- viewmodel használat
