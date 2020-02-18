@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace StudentBook
 {
-    /// <summary>
-    /// Interaction logic for StudentBindingWindow.xaml
-    /// </summary>
     public partial class StudentBindingWindow : Window
     {
         // (A) verzió
@@ -37,6 +34,7 @@ namespace StudentBook
         // modify student
         public StudentBindingWindow(Student s) : this()
         {
+            this.DataContext = null; //ez azért kell mert a WPF nem reseteli a bindingokat ha oldDataContext.Equals(newDataContext)
             this.DataContext = s;
         }
 
