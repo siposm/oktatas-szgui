@@ -89,13 +89,24 @@ namespace StudentBook
         {
             if (StudentListBox.SelectedItem == null) return;
 
-            Student stud = StudentListBox.SelectedItem as Student;
-            StudentBindingWindow window = new StudentBindingWindow(stud);
+            // problémás verzió:
+            //Student stud = StudentListBox.SelectedItem as Student;
+            //StudentBindingWindow window = new StudentBindingWindow(stud);
+            //if (window.ShowDialog() == true) MessageBox.Show("OK, modified");
+            //else MessageBox.Show("BUG: cannot cancel a BINDING!!!"); // TODO: edit a copy => Prototype design pattern!
 
+            // javított verzió
+            Student stud = StudentListBox.SelectedItem as Student;
+            Student clone = new Student();
+
+            clone.CopyFrom(stud);
+
+            StudentBindingWindow window = new StudentBindingWindow( clone ); // !! clone = nem baj ha elveszik
             if (window.ShowDialog() == true)
+            {
                 MessageBox.Show("OK, modified");
-            else
-                MessageBox.Show("BUG: cannot cancel a BINDING!!!"); // TODO: edit a copy => Prototype design pattern!
+                stud.CopyFrom(clone); // visszamásolni
+            }
 
             StudentListBox.Items.Refresh(); // később observable collection...
         }
