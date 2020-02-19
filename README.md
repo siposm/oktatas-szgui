@@ -7,12 +7,14 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 
 ## TARTALOM
 - Grafikus fejlesztés rész:
-    - Controllers, events
-    - Data bindig
+    - Controllers
+	- Events
+    - Data bindig (XAML <-> code behind)
     - Commands
-    - INotifyPropertyChange, ItemTemplate
+    - INotifyPropertyChange
+	- ItemTemplate
     - Dialog
-	- MVVM design pattern
+	- MVVM design pattern (mvvmlightlibs)
 - Játékfejlesztés rész:
     - TODO
 - Egyéb rész:
