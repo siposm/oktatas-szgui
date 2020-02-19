@@ -29,7 +29,8 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 	- adatkötés alapok (data binding)
 	- datacontext (from C#)
 	- datacontext (from XAML)
-	- object & listbox binding
+	- object binding
+	- stackpanel
 	- grid layout (columndefinitions & rowdefinitions)
 	- multiple window layout
 	- show dialog (modális megjelenítés)
@@ -37,6 +38,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 	- MVVM (mvvmlightlibs) bevezető
 	- viewmodel használat
 	- model használat
+	- listbox binding
 	- observable collection (adatkötés haladó (data bindig))
 	- itemtemplate / datatemplate (listbox)
 	- ViewModelBase (~INotifyPropertyChange)
@@ -58,14 +60,13 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 
 
 ## HASZNÁLAT
-**Letöltés**: "Web IDE" gomb mellett a lefele nyílra katt, majd mentés a kiválaszott állományban. **Git**: Töltsd le (https://git-scm.com/downloads), telepítsd (git bash), indítsd el, majd a következő utasításokat hajtsd végre:
+- **Letöltés**: "Web IDE" gomb mellett a lefele nyílra katt, majd mentés a kiválaszott állományban.
+- **Git**: Töltsd le (https://git-scm.com/downloads), telepítsd (git bash), indítsd el, majd a következő utasításokat hajtsd végre:
+    - cd ~/Desktop/
+    - mkdir szgui-laboranyag
+    - cd szgui-laboranyag
+    - git clone https://gitlab.com/siposm/oktatas-szgui-19202.git
 
-```    
-cd ~/Desktop/
-mkdir szgui-laboranyag
-cd szgui-laboranyag
-git clone https://gitlab.com/siposm/oktatas-szgui-19202.git
-```
 
 ## KÖVETELMÉNYEK
 A következő információk a prog4 oldalon található **előadás intro** diából vannak! Esetleges eltérésekért érdemes ott is ellenőrizni az elvárásokat.
