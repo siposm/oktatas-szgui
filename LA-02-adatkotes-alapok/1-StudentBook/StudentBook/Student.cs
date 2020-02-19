@@ -10,7 +10,7 @@ namespace StudentBook
     {
         public string Name { get; set; }
         public string NeptunCode { get; set; }
-        public int? EnrollmentYear { get; set; } // add nullable option
+        public int? EnrollmentYear { get; set; } // nullable option (ezt végül nem használtuk, a json miatt sima int-et használtunk, de a datepicket amúgy datetime object-et kezelne
         public bool IsActive { get; set; }
 
         // tostring nem ideális... >> datatemplate "teljes" adatkötéshez
