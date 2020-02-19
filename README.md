@@ -80,7 +80,7 @@ A következő információk a prog4 oldalon található **előadás intro** diá
 
 ### Követelmény heti bontásban
 -	01. hét	:	
--	02. hét	:	Csapatok kisorsolása (hétvégén a labvez által)
+-	02. hét	:	Csapatok kisorsolása (hétvégén a labvez által, beosztás elérhető a "további anyagok" mappában)
 -	03. hét	:	Téma meghatározása (hallgatói csapat által)
 -	04. hét	:	Use Case, Wireframe, Concept Art + Game Design Document (PONTOS szabályok)
 -	05. hét	:	
