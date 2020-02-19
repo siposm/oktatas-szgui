@@ -43,7 +43,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 	- listbox binding
 	- observable collection (adatkötés haladó (data bindig))
 	- itemtemplate / datatemplate (listbox)
-	- ViewModelBase (~INotifyPropertyChange)
+	- ViewModelBase (~INotifyPropertyChanged)
 - LA04
 	- design-time datacontext
 	- mouse double click event
