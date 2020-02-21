@@ -1,0 +1,56 @@
+
+CSAPATBEOSZTÁS v1
+2020.02.21. 14:00
+
+
+LA-05 GROUP 01 :  Bakos Botond - Kinyó Szabolcs
+LA-05 GROUP 02 :  Szekeres Beatrix Zita - Kovács Patrik Gábor
+LA-05 GROUP 03 :  Héni Kristóf - Fila Norbert László
+LA-05 GROUP 04 :  Herczeg Kristóf István - Akácz Máté
+LA-05 GROUP 05 :  Vékony Martin Gábor - Németh Bálint
+LA-05 GROUP 06 :  Horti Kristóf - Andruskó Zoltán
+LA-05 GROUP 07 :  Kerekes Barnabás Imre - Nánási Nikolett
+LA-05 GROUP 08 :  Litauszky Zsolt - Hajdu Renáta
+LA-05 GROUP 09 :  Nagy Botond - Kucsera Gergő
+LA-05 GROUP 10 :  Pintér Zoltán Róbert - Póta Máté
+LA-05 GROUP 11 :  Pollák Péter - Szegleti Barnabás
+LA-05 GROUP 12 :  Orbán Máté Ciprián - Nyári Kinga
+
+
+LA-06 GROUP 01 :  Szén Dávid - Czeglédy Balázs
+LA-06 GROUP 02 :  Szilágyi Ádám - Drótár Adrián
+LA-06 GROUP 03 :  Varga Balázs - Hegedűs Dávid Csaba
+LA-06 GROUP 04 :  Marján Kristóf - Kaló Áron Zoltán
+LA-06 GROUP 05 :  Remzső Milán - Szabó Péter
+LA-06 GROUP 06 :  Schléger Balázs - Szalay Tamás Imre
+LA-06 GROUP 07 :  Solymosi Norbert - Luxeder Zoltán
+LA-06 GROUP 08 :  Baji Botond - Almási Patrik
+LA-06 GROUP 09 :  Bozsik Zsolt - Bolyki Ágnes
+LA-07 GROUP 10 :  Mészáros Dávid
+
+
+LA-07 GROUP 01 :  Kovács Viktor - Gönczi Norbert
+LA-07 GROUP 02 :  Főző Árpád - Balázsi Edina
+LA-07 GROUP 03 :  Molnár Dóra Katalin - Szabó Zoltán
+LA-07 GROUP 04 :  Németh Kristóf - Csáki Péter
+LA-07 GROUP 05 :  Party Bence András - Kriston Dávid Ákos
+LA-07 GROUP 06 :  Anderle Dániel Attila - Reményi Damján
+LA-07 GROUP 07 :  Hajdú András - Simon Péter
+LA-07 GROUP 08 :  Hanula Benedek - Tumpek Dávid
+LA-07 GROUP 09 :  Józsa Dávid László - Kalmár Dániel
+LA-07 GROUP 10 :  Bódi Bálint - Székely Norbert
+LA-07 GROUP 11 :  Koczka Bence - Torma László Márk
+
+
+LA-08 GROUP 01 :  Baka Richárd - Mellau Vendel József
+LA-08 GROUP 02 :  Lakó Boldizsár - Mikhel Roland
+LA-08 GROUP 03 :  Tomcsányi Donát - Molnár Máté
+LA-08 GROUP 04 :  Bartos Csanád - Bodor Sándor
+LA-08 GROUP 05 :  Boda Zsolt István - Bózsó Bence
+LA-08 GROUP 06 :  Nagy Noel - Csuzdi Bence
+LA-08 GROUP 07 :  Pirityi István - Duzmath Bálint
+LA-08 GROUP 08 :  Banzragch Uchral - Turóczi Dávid
+LA-08 GROUP 09 :  Barkaszi Ádám István - Varga Dániel András
+LA-08 GROUP 10 :  Simonidesz Benjámin - Engel Dorián
+LA-08 GROUP 11 :  Sriffert Ferenc Szilveszter - Faldina Lénárd
+LA-08 GROUP 12 :  Lukács Andrea Eszter - Horváth Ádám
