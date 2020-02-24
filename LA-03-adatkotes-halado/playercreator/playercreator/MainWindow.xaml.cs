@@ -90,7 +90,16 @@ namespace playercreator
 
         private void RemoveClick(object sender, RoutedEventArgs e)
         {
-            vm.PlayerList.RemoveAt(ListboxPlayers.SelectedIndex);
+            // with single select option:
+            //vm.PlayerList.RemoveAt(ListboxPlayers.SelectedIndex); 
+
+            // with multi select option:
+            List<Player> toDelete = new List<Player>();
+            foreach (var item in ListboxPlayers.SelectedItems)
+                toDelete.Add(item as Player);
+
+            foreach (var item in toDelete)
+                vm.PlayerList.Remove(item as Player);
 
             vm.UpdateKillCountValue();
         }
@@ -119,6 +128,11 @@ namespace playercreator
                 s += string.Format($"{item.Name} : {item.KillCount}\n");
 
             MessageBox.Show(s);
+        }
+
+        private void PurgeClick(object sender, RoutedEventArgs e)
+        {
+            vm.PlayerList.Clear();
         }
     }
 }
