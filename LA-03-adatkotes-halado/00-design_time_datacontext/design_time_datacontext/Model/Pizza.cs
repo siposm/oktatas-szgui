@@ -13,12 +13,13 @@ namespace design_time_datacontext.Model
         //public int ID { get; set; }
         //public string Name { get; set; }
         //public int Diameter { get; set; }
+        // OPC esetén teljes adattag+prop kell, a set ág miatt...
 
         private int id;
         public int ID
         {
             get { return id; }
-            set { id = value; OnPropertyChanged(); }
+            set { id = value; OnPropertyChanged(); } // callermembername ha nincs: OnPropertyChanged (ID)
         }
 
         private string name;
