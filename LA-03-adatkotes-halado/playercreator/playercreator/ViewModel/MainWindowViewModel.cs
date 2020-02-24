@@ -34,6 +34,21 @@ namespace playercreator.ViewModel
         public MainWindowViewModel()
         {
             PlayerList = new ObservableCollection<Player>();
+            PlayerList.Add(new Player()
+            {
+                BirthYear = 1990,
+                ID = "__ASD123",
+                IsActive = true,
+                Name = "TEST PLAYER"
+            });
+
+            PlayerList.Add(new Player()
+            {
+                BirthYear = 1988,
+                ID = "__TEST12",
+                IsActive = true,
+                Name = "RANDOM PLAYER"
+            });
         }
     }
 }
