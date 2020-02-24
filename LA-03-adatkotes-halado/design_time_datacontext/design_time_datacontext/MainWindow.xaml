@@ -1,0 +1,40 @@
+﻿<Window x:Class="design_time_datacontext.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="DTDC demo" Height="450" Width="587.741" FontSize="15"
+        
+        xmlns:local="clr-namespace:design_time_datacontext.ViewModel">
+
+    <Window.Resources>
+        <local:PizzaViewModel x:Key="my_viewmodel"/>
+    </Window.Resources>
+    
+    <Grid DataContext="{StaticResource my_viewmodel}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Click="AddClick" Content="add new item" Margin="20" Padding="10"></Button>
+            <Button Click="RemoveClick" Content="remove first item" Margin="20" Padding="10"></Button>
+            <Button Click="ChangeClick" Content="change first item's name" Margin="20" Padding="10"></Button>
+        </StackPanel>
+
+        <ListBox Grid.Row="1" ItemsSource="{Binding PizzaCollection}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="{Binding ID}"></Label>
+                        <Label Content="{Binding Name}"></Label>
+                        <Label Content="{Binding Diameter}" ContentStringFormat="{}{0} cm"></Label>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+    </Grid>
+</Window>

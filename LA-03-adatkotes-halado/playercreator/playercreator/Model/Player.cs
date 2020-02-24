@@ -18,7 +18,10 @@ namespace playercreator.Model
             {
                 int sum = 1;
                 for (int i = 0; i < 4; i++)
-                    sum *= int.Parse(BirthYear.ToString()[i].ToString()); // :)
+                {
+                    if( int.Parse(BirthYear.ToString()[i].ToString()) != 0 )
+                        sum *= int.Parse(BirthYear.ToString()[i].ToString()); // :)
+                }
                 return sum;
             }
             // set >> nincs set >> OneWay binding

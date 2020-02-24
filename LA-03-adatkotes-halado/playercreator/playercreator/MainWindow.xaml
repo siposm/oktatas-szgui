@@ -3,18 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:playercreator"
-        
-        xmlns:local2="clr-namespace:playercreator.ViewModel"
-        
+                
         mc:Ignorable="d"
-        Title="Player Manager" Height="657" Width="594.5">
+        Title="Player Manager" Height="732" Width="594.5"
+        
+        xmlns:local="clr-namespace:playercreator.ViewModel">
 
     <Window.Resources>
-        <local2:MainWindowViewModel x:Key="my_viewmodel"></local2:MainWindowViewModel>
+        <local:MainWindowViewModel x:Key="my_viewmodel" />
     </Window.Resources>
     
-    <Grid>
+    <Grid DataContext="{StaticResource my_viewmodel}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"></ColumnDefinition>
             <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -27,6 +26,7 @@
             <Button IsEnabled="False" Content="ADD NEW" Height="40" Margin="10"></Button>
             <Button IsEnabled="False" Content="MODIFY SELECTED" Height="40" Margin="10"></Button>
             <Button Click="RemoveClick" Content="REMOVE SELECTED" Height="40" Margin="10"></Button>
+            <Button Click="PurgeClick" Content="PURGE ALL" Height="40" Margin="10"></Button>
             <Button Click="ExportClick" Content="EXPORT TO JSON" Height="40" Margin="10"></Button>
             <Label Content="--------------" HorizontalAlignment="Center"></Label>
             <Button Click="OrderAscClick" Content="NAME ASC" Margin="10"></Button>
@@ -36,7 +36,7 @@
             <Label Content="{Binding MaxKillCountValue}" ContentStringFormat="Max kill value: {0}" HorizontalAlignment="Center"></Label>
         </StackPanel>
         
-        <ListBox Grid.Column="1" x:Name="ListboxPlayers" ItemsSource="{Binding PlayerList}">
+        <ListBox Grid.Column="1" x:Name="ListboxPlayers" ItemsSource="{Binding PlayerList}" SelectionMode="Multiple">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
