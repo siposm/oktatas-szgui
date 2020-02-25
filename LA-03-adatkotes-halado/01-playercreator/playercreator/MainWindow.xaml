@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                 
         mc:Ignorable="d"
-        Title="Player Manager" Height="732" Width="594.5"
+        Title="Player Manager" Height="806.32" Width="594.5"
         
         xmlns:local="clr-namespace:playercreator.ViewModel">
 
@@ -32,6 +32,7 @@
             <Button Click="OrderAscClick" Content="NAME ASC" Margin="10"></Button>
             <Button Click="OrderDescClick" Content="NAME DESC" Margin="10"></Button>
             <Label Content="--------------" HorizontalAlignment="Center"></Label>
+            <Button Click="RandomizeClick" Content="RANDOMIZE" Height="40" Margin="10"></Button>
             <Button Click="TopKillsClick" Content="TOP 10 KILLS" Height="40" Margin="10"></Button>
             <Label Content="{Binding MaxKillCountValue}" ContentStringFormat="Max kill value: {0}" HorizontalAlignment="Center"></Label>
         </StackPanel>
