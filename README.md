@@ -37,13 +37,14 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 	- multiple window layout
 	- show dialog (modális megjelenítés)
 - LA03
+	- design time datacontext (XAML)
 	- MVVM (mvvmlightlibs) bevezető
 	- viewmodel használat
 	- model használat
-	- listbox binding
-	- observable collection (adatkötés haladó (data bindig))
+	- listbox binding (list vs observableCollection)
+	- observable collection (adatkötés haladó)
 	- itemtemplate / datatemplate (listbox)
-	- ViewModelBase (~INotifyPropertyChanged)
+	- ObservableObject (~INotifyPropertyChanged)
 - LA04
 	- design-time datacontext
 	- mouse double click event
