@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace design_time_datacontext.Model
 {
-    class Pizza : INotifyPropertyChanged
+    class Pizza : INotifyPropertyChanged // később observable object (mvvm light libs)
     {
         //public int ID { get; set; }
         //public string Name { get; set; }
@@ -19,7 +19,9 @@ namespace design_time_datacontext.Model
         public int ID
         {
             get { return id; }
-            set { id = value; OnPropertyChanged(); } // callermembername ha nincs: OnPropertyChanged (ID)
+            set { id = value; OnPropertyChanged(); }
+            // kieg 1.: callermembername ha nincs: OnPropertyChanged (ID)
+            // kieg 2.: observable object esetén példa:  set { Set(ref size, value); RaisePropertyChanged(nameof(TotalPrice)); }
         }
 
         private string name;
