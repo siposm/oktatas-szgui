@@ -14,7 +14,12 @@ namespace playercreator.Model
         {
             get { return name; }
             //set { name = value; }
-            set { Set(ref name, value); RaisePropertyChanged(nameof(Name)); }
+            set
+            {
+                Set(ref name, value);
+                //RaisePropertyChanged(nameof(Name)); 
+                RaisePropertyChanged(); // mivel a O.O.-ban használva van a [CallerMemberName] ezért nem kell megadni neki semmit paraméternek...
+            }
         }
 
 
