@@ -22,9 +22,6 @@ using playercreator.ViewModel;
 
 namespace playercreator
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         MainWindowViewModel vm;
@@ -34,7 +31,7 @@ namespace playercreator
             InitializeComponent();
 
             vm = FindResource("my_viewmodel") as MainWindowViewModel;
-            this.DataContext = vm;
+            //this.DataContext = vm; // nem kell!
         }
 
 
