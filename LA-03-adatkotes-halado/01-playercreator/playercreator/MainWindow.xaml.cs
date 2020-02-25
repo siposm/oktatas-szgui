@@ -134,5 +134,10 @@ namespace playercreator
         {
             vm.PlayerList.Clear();
         }
+
+        private void RandomizeClick(object sender, RoutedEventArgs e)
+        {
+            vm.PlayerList.First().Name = "THIS IS THE NEW NAME";
+        }
     }
 }
