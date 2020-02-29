@@ -1,0 +1,39 @@
+﻿<Window x:Class="linked_list_visual.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Chained List Window" Height="700" Width="500"
+        xmlns:local="clr-namespace:linked_list_visual.ViewModel">
+
+    <Window.Resources>
+        <local:MainWindowViewModel x:Key="my_viewmodel" />
+    </Window.Resources>
+    
+    <Grid DataContext="{StaticResource my_viewmodel}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Background="BlueViolet">
+            <Button Command="{Binding AddNewCommand}" Content="ADD NEW" FontWeight="ExtraBold" Margin="10" Padding="10"/>
+            <Button Command="{Binding RemoveSelectedCommand}" Content="REMOVE SELECTED" FontWeight="ExtraBold" Margin="10" Padding="10"/>
+        </StackPanel>
+        
+        <ListBox FontSize="20" Grid.Row="1" ItemsSource="{Binding MyList}"
+                 SelectedItem="{Binding SelectedPlayer}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="{Binding Hash, Mode=OneWay}" ContentStringFormat="# {0}"/>
+                        <Label Content="{Binding Name}" FontWeight="ExtraBlack"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+    </Grid>
+</Window>
