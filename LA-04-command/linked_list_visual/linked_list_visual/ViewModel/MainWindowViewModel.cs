@@ -39,7 +39,11 @@ namespace linked_list_visual.ViewModel
             Profile newProfile = new Profile();
             npw.DataContext = newProfile;
             if(npw.ShowDialog() == true)
+            {
+                newProfile.Image = "https://randomuser.me/api/portraits/men/";
+                newProfile.Image += new Random().Next(0, 60).ToString() + ".jpg";
                 MyList.Insert(newProfile, false);
+            }
 
             // alapból a lista végére rakunk (false)
             // itt most jól is jön ki mert a GUI-nál trükközni kéne, hogy a lista elejére való beszúráskor ott is jelenjen meg
