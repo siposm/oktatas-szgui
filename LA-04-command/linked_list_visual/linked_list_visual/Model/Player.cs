@@ -13,6 +13,8 @@ namespace linked_list_visual.Model
         public string Name { get; set; }
         public int BirthYear { get; set; }
         public bool IsActive { get; set; }
+        public string Image { get; set; }
+        public int Connections { get; set; }
 
         public int Hash
         {

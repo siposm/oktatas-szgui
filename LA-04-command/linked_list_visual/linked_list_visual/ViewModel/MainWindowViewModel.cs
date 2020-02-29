@@ -48,10 +48,13 @@ namespace linked_list_visual.ViewModel
         private void LoadPlayers()
         {
             WebClient wc = new WebClient();
-            string playersString = wc.DownloadString("http://users.nik.uni-obuda.hu/siposm/db/players.json");
+            string playersString = wc.DownloadString("http://users.nik.uni-obuda.hu/siposm/db/players_v2.json");
             var q = JsonConvert.DeserializeObject<List<Player>>(playersString);
-            foreach (var item in q)
-                MyList.Insert(item as Player, false);
+
+            q.ForEach(x => MyList.Insert(x, false));
+
+            //foreach (var item in q)
+            //    MyList.Insert(item as Player, false);
         }
     }
 }
