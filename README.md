@@ -41,15 +41,19 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 	- MVVM (mvvmlightlibs) bevezető
 	- viewmodel használat
 	- model használat
-	- listbox binding (list vs observableCollection)
+	- listbox binding (list vs observable collection)
 	- observable collection (adatkötés haladó)
 	- itemtemplate / datatemplate (listbox)
 	- ObservableObject (~INotifyPropertyChanged)
 - LA04
-	- design-time datacontext
 	- mouse double click event
+	- window loaded event
+	- teljes MVVM
 	- command binding (click event helyett)
 	- business logic használat (& model & viewmodel)
+	- listbox binding saját adatszerkezettel
+		- INotifyCollectionChanged (ObservableCollection alapján)
+		- IEnumerable & IEnumerator (listbox GUI feldolgozás)
 - LA05
 - LA06
 - LA07
