@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,13 +7,24 @@ using System.Threading.Tasks;
 
 namespace linked_list_visual.Model
 {
-    class Player
+    class Player : ObservableObject
     {
+        public string ID { get; set; }
         public string Name { get; set; }
+        public int BirthYear { get; set; }
+        public bool IsActive { get; set; }
 
-        public override string ToString()
+        public override bool Equals(object obj)
         {
-            return Name;
+            if (obj is Player)
+            {
+                Player x = obj as Player;
+                return x.ID == ID &&
+                    x.Name == Name &&
+                    x.BirthYear == BirthYear &&
+                    x.IsActive == IsActive;
+            }
+            return false;
         }
     }
 }

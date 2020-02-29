@@ -1,59 +1,61 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace linked_list_visual.Model
 {
-    class ChainedList<T> : IEnumerator, IEnumerable
+    class ChainedList<T> : IEnumerator, IEnumerable, INotifyCollectionChanged
     {
-        public ChainedList()
+        class ListItem
         {
+            public T content;
+            public ListItem next;
+        }
+        private ListItem head;
+        private ListItem pointer;
+
+        public event NotifyCollectionChangedEventHandler CollectionChanged;
+
+        private void OCC(T item)
+        {
+            CollectionChanged?.Invoke(this,
+                new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, item));
         }
 
-        private ListaElem fej;
-        private ListaElem bejaro;
-
-        class ListaElem
-        {
-            public T tartalom;
-            public ListaElem kovetkezo;
-        }
-
-        #region interface metódusok
+        #region enumerator and enumerable interface methods
         public object Current
         {
-            get { return bejaro.tartalom; }
+            get { return pointer.content; }
         }
 
         public bool MoveNext()
         {
-            if (bejaro == null)
+            if (pointer == null)
             {
-                // első hívás
-                bejaro = fej;
+                pointer = head;
                 return true;
             }
-            else if (bejaro.kovetkezo != null)
+            else if (pointer.next != null)
             {
-                // n. hívás
-                bejaro = bejaro.kovetkezo;
+                pointer = pointer.next;
                 return true;
             }
             else
             {
-                // lista vége
                 this.Reset();
                 return false;
             }
-
         }
 
         public void Reset()
         {
-            bejaro = null;
+            pointer = null;
         }
 
         public IEnumerator GetEnumerator()
@@ -62,43 +64,44 @@ namespace linked_list_visual.Model
         }
         #endregion
 
-        #region lista metódusok
-        public void Beszuras(T elem)
+        #region list methods
+        public void Insert(T itemToInsert, bool toBeginning)
         {
-            bool listaelejere = false;
+            ListItem newItem = new ListItem() { content = itemToInsert };
 
-            ListaElem uj = new ListaElem() { tartalom = elem };
-
-            if (listaelejere)
+            if (toBeginning)
             {
-                uj.kovetkezo = fej;
-                fej = uj;
+                newItem.next = head;
+                head = newItem;
             }
             else
             {
-                // lista végére
-                if (fej == null)
-                    fej = uj;
+                if (head == null)
+                    head = newItem;
                 else
                 {
-                    ListaElem p = fej;
-                    while (p.kovetkezo != null)
-                        p = p.kovetkezo;
+                    ListItem p = head;
+                    while (p.next != null)
+                        p = p.next;
 
-                    p.kovetkezo = uj;
+                    p.next = newItem;
                 }
             }
+
+            OCC(itemToInsert);
         }
 
-        public void Bejaras()
+        public void ProcessFullList()
         {
-            ListaElem p = fej;
+            ListItem p = head;
             while (p != null)
             {
-                Console.WriteLine(p.tartalom);
-                p = p.kovetkezo;
+                // yield return ??? ... return p.content;
+                p = p.next;
             }
         }
+
+
         #endregion
     }
 

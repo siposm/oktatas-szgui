@@ -3,9 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        FontSize="20"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="Chained List Window" Height="700" Width="500"
         xmlns:local="clr-namespace:linked_list_visual.ViewModel">
 
     <Window.Resources>
@@ -20,22 +19,17 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Background="BlueViolet">
-            <Button Content="ADD NEW" Margin="10" Padding="10"/>
-            <Button Content="REMOVE" Margin="10" Padding="10"/>
+            <Button Command="{Binding AddNewCommand}" Content="ADD NEW" Margin="10" Padding="10"/>
+            <Button Content="REMOVE SELECTED" Margin="10" Padding="10"/>
         </StackPanel>
-
-        <!--<ItemsControl Grid.Row="1" ItemsSource="{Binding MyList}">
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <WrapPanel x:Name="WrapPanelForList"/>
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-        </ItemsControl>-->
-
-        <ListBox Grid.Row="1" ItemsSource="{Binding MyList}">
+        
+        <ListBox FontSize="20" Grid.Row="1" ItemsSource="{Binding MyList}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Label Content="{Binding Name}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="{Binding ID}" ContentStringFormat="# {0}"/>
+                        <Label Content="{Binding Name}" FontWeight="ExtraBlack"/>
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
