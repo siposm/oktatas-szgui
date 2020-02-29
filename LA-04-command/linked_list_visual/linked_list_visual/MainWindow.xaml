@@ -20,10 +20,11 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Background="BlueViolet">
             <Button Command="{Binding AddNewCommand}" Content="ADD NEW" Margin="10" Padding="10"/>
-            <Button Content="REMOVE SELECTED" Margin="10" Padding="10"/>
+            <Button Command="{Binding RemoveSelectedCommand}" Content="REMOVE SELECTED" Margin="10" Padding="10"/>
         </StackPanel>
         
-        <ListBox FontSize="20" Grid.Row="1" ItemsSource="{Binding MyList}">
+        <ListBox FontSize="20" Grid.Row="1" ItemsSource="{Binding MyList}"
+                 SelectedItem="{Binding SelectedPlayer}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">

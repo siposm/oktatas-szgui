@@ -17,23 +17,30 @@ namespace linked_list_visual.ViewModel
     {
         public ChainedList<Player> MyList { get; set; }
         public ICommand AddNewCommand { get; private set; }
+        public ICommand RemoveSelectedCommand { get; private set; }
+        public Player SelectedPlayer { get; set; }
 
         public MainWindowViewModel()
         {
             AddNewCommand = new RelayCommand(() => this.Add());
+            RemoveSelectedCommand = new RelayCommand(() => this.Remove());
             MyList = new ChainedList<Player>();
             LoadPlayers();
         }
 
+        private void Remove()
+        {
+            MyList.Remove(SelectedPlayer);
+        }
+
         private void Add()
         {
-            MyList.Insert(new Player()
-            {
-                Name = "TEST - X - PLAYER",
-                IsActive = false,
-                BirthYear = 9999,
-                ID = "X-X-X-X"
-            }, false);
+            NewPlayerWindow npw = new NewPlayerWindow();
+            Player newPlayer = new Player();
+            npw.DataContext = newPlayer;
+            if(npw.ShowDialog() == true)
+                MyList.Insert(newPlayer, false);
+
             // alapból a lista végére rakunk (false)
             // itt most jól is jön ki mert a GUI-nál trükközni kéne, hogy a lista elejére való beszúráskor ott is jelenjen meg
         }

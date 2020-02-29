@@ -22,10 +22,16 @@ namespace linked_list_visual.Model
 
         public event NotifyCollectionChangedEventHandler CollectionChanged;
 
-        private void OCC(T item)
+        private void OCC_Add(T item)
         {
             CollectionChanged?.Invoke(this,
                 new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, item));
+        }
+
+        private void OCC_Rem(T item)
+        {
+            CollectionChanged?.Invoke(this,
+                new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));  // NotifyCollectionChangedAction.Remove nem működött megfelelően
         }
 
         #region enumerator and enumerable interface methods
@@ -88,7 +94,7 @@ namespace linked_list_visual.Model
                 }
             }
 
-            OCC(itemToInsert);
+            OCC_Add(itemToInsert);
         }
 
         public void ProcessFullList()
@@ -101,7 +107,28 @@ namespace linked_list_visual.Model
             }
         }
 
+        public void Remove(T itemToDelete)
+        {
+            ListItem p = head;
+            ListItem e = null;
+            while (p != null && !p.content.Equals(itemToDelete))
+            {
+                e = p;
+                p = p.next;
+            }
 
+            if (p != null)
+            {
+                if (e == null)
+                    head = p.next;
+                else
+                    e.next = p.next;
+                p = null;
+            }
+            //else throw new Exception("no such requested item is in the list");
+
+            OCC_Rem(itemToDelete);
+        }
         #endregion
     }
 
