@@ -19,8 +19,8 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Background="BlueViolet">
-            <Button Command="{Binding AddNewCommand}" Content="ADD NEW" Margin="10" Padding="10"/>
-            <Button Command="{Binding RemoveSelectedCommand}" Content="REMOVE SELECTED" Margin="10" Padding="10"/>
+            <Button Command="{Binding AddNewCommand}" Content="ADD NEW" FontWeight="ExtraBold" Margin="10" Padding="10"/>
+            <Button Command="{Binding RemoveSelectedCommand}" Content="REMOVE SELECTED" FontWeight="ExtraBold" Margin="10" Padding="10"/>
         </StackPanel>
         
         <ListBox FontSize="20" Grid.Row="1" ItemsSource="{Binding MyList}"
@@ -28,7 +28,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <Label Content="{Binding ID}" ContentStringFormat="# {0}"/>
+                        <Label Content="{Binding Hash, Mode=OneWay}" ContentStringFormat="# {0}"/>
                         <Label Content="{Binding Name}" FontWeight="ExtraBlack"/>
                     </StackPanel>
                 </DataTemplate>

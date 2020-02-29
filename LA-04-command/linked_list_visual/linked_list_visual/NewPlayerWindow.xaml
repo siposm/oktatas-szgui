@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         FontSize="20"
         Title="NewPlayerWindow" Height="350" Width="300">
-    <Grid>
+    <Grid Background="LightGray">
         <StackPanel Margin="10">
             <Label Content="PLAYER NAME:"/>
             <TextBox Text="{Binding Name}"/>

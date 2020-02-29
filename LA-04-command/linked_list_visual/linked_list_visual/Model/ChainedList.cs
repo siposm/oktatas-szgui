@@ -20,6 +20,7 @@ namespace linked_list_visual.Model
         private ListItem head;
         private ListItem pointer;
 
+        #region collection changed interface methods
         public event NotifyCollectionChangedEventHandler CollectionChanged;
 
         private void OCC_Add(T item)
@@ -33,6 +34,7 @@ namespace linked_list_visual.Model
             CollectionChanged?.Invoke(this,
                 new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));  // NotifyCollectionChangedAction.Remove nem működött megfelelően
         }
+        #endregion
 
         #region enumerator and enumerable interface methods
         public object Current
@@ -95,16 +97,6 @@ namespace linked_list_visual.Model
             }
 
             OCC_Add(itemToInsert);
-        }
-
-        public void ProcessFullList()
-        {
-            ListItem p = head;
-            while (p != null)
-            {
-                // yield return ??? ... return p.content;
-                p = p.next;
-            }
         }
 
         public void Remove(T itemToDelete)

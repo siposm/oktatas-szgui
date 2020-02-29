@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace linked_list_visual
 {
-    /// <summary>
-    /// Interaction logic for NewPlayerWindow.xaml
-    /// </summary>
     public partial class NewPlayerWindow : Window
     {
         public NewPlayerWindow()
