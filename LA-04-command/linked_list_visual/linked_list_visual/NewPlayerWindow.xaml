@@ -6,19 +6,26 @@
         xmlns:local="clr-namespace:linked_list_visual"
         mc:Ignorable="d"
         FontSize="20"
-        Title="NewPlayerWindow" Height="350" Width="300">
+        Title="New Linkedin profile" Height="500" Width="300">
     <Grid Background="LightGray">
         <StackPanel Margin="10">
-            <Label Content="PLAYER NAME:"/>
+            <Label Content="PROFILE NAME:"/>
             <TextBox Text="{Binding Name}"/>
-            <Label Content="PLAYER ID:"/>
-            <TextBox Text="{Binding ID}"/>
             
-            <Label Content="PLAYER BIRTH YEAR:"/>
+            <Label Content="PROFILE ID:"/>
+            <TextBox Text="{Binding ID}"/>
+
+            <Label Content="PROFILE BIRTH YEAR:"/>
             <TextBox Text="{Binding BirthYear}"/>
 
-            <Label Content="PLAYER STATUS (active):"/>
+            <Label Content="PROFILE STATUS (active):"/>
             <CheckBox IsChecked="{Binding IsActive}"/>
+
+            <Label Content="PROFILE CONNECTIONS:"/>
+            <TextBox Text="{Binding Connections}"/>
+
+            <Label Content="PROFILE IMAGE:"/>
+            <TextBox Text="{Binding Image}"/>
 
             <Button Click="Button_Click" Content="ADD / SAVE" Background="LawnGreen" Margin="0,10" FontWeight="ExtraBold"/>
         </StackPanel>

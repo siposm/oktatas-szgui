@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace linked_list_visual.Model
 {
-    class Player : ObservableObject
+    class Profile : ObservableObject
     {
         public string ID { get; set; }
         public string Name { get; set; }
@@ -28,9 +28,9 @@ namespace linked_list_visual.Model
 
         public override bool Equals(object obj)
         {
-            if (obj is Player)
+            if (obj is Profile)
             {
-                Player x = obj as Player;
+                Profile x = obj as Profile;
                 return x.ID == ID &&
                     x.Name == Name &&
                     x.BirthYear == BirthYear &&

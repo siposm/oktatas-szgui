@@ -15,31 +15,31 @@ namespace linked_list_visual.ViewModel
 {
     class MainWindowViewModel : ViewModelBase
     {
-        public ChainedList<Player> MyList { get; set; }
+        public ChainedList<Profile> MyList { get; set; }
         public ICommand AddNewCommand { get; private set; }
         public ICommand RemoveSelectedCommand { get; private set; }
-        public Player SelectedPlayer { get; set; }
+        public Profile SelectedProfile { get; set; }
 
         public MainWindowViewModel()
         {
             AddNewCommand = new RelayCommand(() => this.Add());
             RemoveSelectedCommand = new RelayCommand(() => this.Remove());
-            MyList = new ChainedList<Player>();
+            MyList = new ChainedList<Profile>();
             LoadPlayers();
         }
 
         private void Remove()
         {
-            MyList.Remove(SelectedPlayer);
+            MyList.Remove(SelectedProfile);
         }
 
         private void Add()
         {
             NewPlayerWindow npw = new NewPlayerWindow();
-            Player newPlayer = new Player();
-            npw.DataContext = newPlayer;
+            Profile newProfile = new Profile();
+            npw.DataContext = newProfile;
             if(npw.ShowDialog() == true)
-                MyList.Insert(newPlayer, false);
+                MyList.Insert(newProfile, false);
 
             // alapból a lista végére rakunk (false)
             // itt most jól is jön ki mert a GUI-nál trükközni kéne, hogy a lista elejére való beszúráskor ott is jelenjen meg
@@ -49,7 +49,7 @@ namespace linked_list_visual.ViewModel
         {
             WebClient wc = new WebClient();
             string playersString = wc.DownloadString("http://users.nik.uni-obuda.hu/siposm/db/players_v2.json");
-            var q = JsonConvert.DeserializeObject<List<Player>>(playersString);
+            var q = JsonConvert.DeserializeObject<List<Profile>>(playersString);
 
             q.ForEach(x => MyList.Insert(x, false));
 
