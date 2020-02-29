@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace folderlister
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         MainWindowViewModel viewModel;
@@ -50,7 +47,7 @@ namespace folderlister
             if (viewModel.SelectedEntry.IsDir)
             {
                 MainWindow window = new MainWindow(viewModel.SelectedEntry.Name);
-                window.Show();
+                window.Show(); // itt alapvetően nem érdekel, hogy mi lesz az ablakkal, ezért nem showdialog-ot használunk
             }
             else
             {
