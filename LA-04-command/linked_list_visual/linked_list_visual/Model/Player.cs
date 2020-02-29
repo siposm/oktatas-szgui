@@ -14,6 +14,16 @@ namespace linked_list_visual.Model
         public int BirthYear { get; set; }
         public bool IsActive { get; set; }
 
+        public int Hash
+        {
+            get { return Math.Abs(this.GetHashCode()); }
+        }
+
+        public override int GetHashCode()
+        {
+            return ID.GetHashCode() * Name.GetHashCode();
+        }
+
         public override bool Equals(object obj)
         {
             if (obj is Player)
