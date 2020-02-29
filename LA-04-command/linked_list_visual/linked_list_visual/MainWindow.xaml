@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        
+        FontSize="20"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         xmlns:local="clr-namespace:linked_list_visual.ViewModel">
@@ -13,6 +13,32 @@
     </Window.Resources>
     
     <Grid DataContext="{StaticResource my_viewmodel}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Background="BlueViolet">
+            <Button Content="ADD NEW" Margin="10" Padding="10"/>
+            <Button Content="REMOVE" Margin="10" Padding="10"/>
+        </StackPanel>
+
+        <!--<ItemsControl Grid.Row="1" ItemsSource="{Binding MyList}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel x:Name="WrapPanelForList"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>-->
+
+        <ListBox Grid.Row="1" ItemsSource="{Binding MyList}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding Name}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         
     </Grid>
 </Window>

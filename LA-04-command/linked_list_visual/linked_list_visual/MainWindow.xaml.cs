@@ -18,7 +18,7 @@ namespace linked_list_visual
 {
     public partial class MainWindow : Window
     {
-        private MainWindowViewModel vm { get; set; }
+        private MainWindowViewModel vm;
 
         public MainWindow()
         {
