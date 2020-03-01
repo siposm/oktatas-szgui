@@ -20,11 +20,14 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Background="LightGray">
             <Image Source="https://logos-download.com/wp-content/uploads/2016/03/LinkedIn_logo_logotype_emblem.png" Height="40" Margin="20,0,10,0"/>
-            <Button Command="{Binding AddNewCommand}" Content="ADD NEW" FontWeight="ExtraBold" Margin="10" Padding="10" Background="White"/>
-            <Button Command="{Binding RemoveSelectedCommand}" Content="REMOVE SELECTED" FontWeight="ExtraBold" Margin="10" Padding="10" Background="White"/>
+            <Button Command="{Binding AddNewCommand}"
+                    Content="ADD NEW" FontWeight="ExtraBold" Margin="10" Padding="10" Background="White"/>
+            <Button Command="{Binding RemoveSelectedCommand}"
+                    Content="REMOVE SELECTED" FontWeight="ExtraBold" Margin="10" Padding="10" Background="White"/>
         </StackPanel>
 
-        <ListBox FontSize="20" Grid.Row="1" ItemsSource="{Binding MyList}"
+        <ListBox FontSize="20" Grid.Row="1"
+                 ItemsSource="{Binding ProfileCollection}"
                  SelectedItem="{Binding SelectedPlayer}">
             <ListBox.ItemTemplate>
                 <DataTemplate>

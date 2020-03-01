@@ -15,22 +15,25 @@ namespace linked_list_visual.ViewModel
 {
     class MainWindowViewModel : ViewModelBase
     {
-        public ChainedList<Profile> MyList { get; set; }
+        public ChainedList<Profile> ProfileCollection { get; set; }
+        public Profile SelectedProfile { get; set; }
         public ICommand AddNewCommand { get; private set; }
         public ICommand RemoveSelectedCommand { get; private set; }
-        public Profile SelectedProfile { get; set; }
-
+        
         public MainWindowViewModel()
         {
             AddNewCommand = new RelayCommand(() => this.Add());
             RemoveSelectedCommand = new RelayCommand(() => this.Remove());
-            MyList = new ChainedList<Profile>();
+            ProfileCollection = new ChainedList<Profile>();
             LoadPlayers();
         }
 
+
+
+
         private void Remove()
         {
-            MyList.Remove(SelectedProfile);
+            ProfileCollection.Remove(SelectedProfile);
         }
 
         private void Add()
@@ -42,23 +45,21 @@ namespace linked_list_visual.ViewModel
             {
                 newProfile.Image = "https://randomuser.me/api/portraits/men/";
                 newProfile.Image += new Random().Next(0, 60).ToString() + ".jpg";
-                MyList.Insert(newProfile, false);
+                ProfileCollection.Insert(newProfile, false);
             }
 
             // alapból a lista végére rakunk (false)
             // itt most jól is jön ki mert a GUI-nál trükközni kéne, hogy a lista elejére való beszúráskor ott is jelenjen meg
+            // eddig ez nem jött elő, mert list és obscoll esetén is a végére rak a .Add
         }
 
         private void LoadPlayers()
         {
             WebClient wc = new WebClient();
             string playersString = wc.DownloadString("http://users.nik.uni-obuda.hu/siposm/db/players_v2.json");
-            var q = JsonConvert.DeserializeObject<List<Profile>>(playersString);
-
-            q.ForEach(x => MyList.Insert(x, false));
-
-            //foreach (var item in q)
-            //    MyList.Insert(item as Player, false);
+            JsonConvert
+                .DeserializeObject<List<Profile>>(playersString)
+                .ForEach(x => ProfileCollection.Insert(x, false));
         }
     }
 }
