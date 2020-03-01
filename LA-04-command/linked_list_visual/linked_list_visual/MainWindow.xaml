@@ -1,0 +1,47 @@
+﻿<Window x:Class="linked_list_visual.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Linkedin profile manager" Height="700" Width="500"
+        xmlns:local="clr-namespace:linked_list_visual.ViewModel">
+
+    <Window.Resources>
+        <local:MainWindowViewModel x:Key="my_viewmodel" />
+    </Window.Resources>
+
+    <Grid DataContext="{StaticResource my_viewmodel}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Background="LightGray">
+            <Image Source="https://logos-download.com/wp-content/uploads/2016/03/LinkedIn_logo_logotype_emblem.png" Height="40" Margin="20,0,10,0"/>
+            <Button Command="{Binding AddNewCommand}"
+                    Content="ADD NEW" FontWeight="ExtraBold" Margin="10" Padding="10" Background="White"/>
+            <Button Command="{Binding RemoveSelectedCommand}"
+                    Content="REMOVE SELECTED" FontWeight="ExtraBold" Margin="10" Padding="10" Background="White"/>
+        </StackPanel>
+
+        <ListBox FontSize="20" Grid.Row="1"
+                 ItemsSource="{Binding ProfileCollection}"
+                 SelectedItem="{Binding SelectedPlayer}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding Image}" Height="60" Margin="10,0,20,0"/>
+                        <StackPanel>
+                            <Label Content="{Binding Name}" FontWeight="ExtraBold"/>
+                            <ProgressBar Height="5" Width="200" Minimum="0" Maximum="5000" Value="{Binding Connections}"/>
+                            <Label Content="{Binding Hash, Mode=OneWay}" ContentStringFormat="SYSTEM ID: {0}" FontSize="15"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
+</Window>

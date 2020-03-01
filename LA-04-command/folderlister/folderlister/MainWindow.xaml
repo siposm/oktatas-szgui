@@ -13,7 +13,7 @@
         Loaded="Window_Loaded">
     <!--
         designinstance >> menet közben látható mi történik itt a tervezőben... (design-time datacontext)
-        ha ezt kivesszük akkor is működik minden, csak itt tervezés közben  nem látszódnak a doglok
+        ha ezt kivesszük akkor is működik minden, csak itt tervezés közben  nem látszódnak a dolgok
     -->
     <Grid>
         <Grid.RowDefinitions>
