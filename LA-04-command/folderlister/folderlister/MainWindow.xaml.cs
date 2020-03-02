@@ -34,6 +34,8 @@ namespace folderlister
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //  d: DataContext (XAML) >> csak design időben hozza létre a példányt (autocomplete)
+            //  DE futási időben nem, ezért kell itt létrehozni a példányt:
             viewModel = new MainWindowViewModel(currentDirectory);
             this.DataContext = viewModel;
         }
@@ -60,6 +62,13 @@ namespace folderlister
             {
                 System.Diagnostics.Process.Start(viewModel.SelectedEntry.Name);
             }
+        }
+
+        private void Test(/* ... */)
+        {
+            // viewModel.SelectEntryCommand.Execute(null);
+            // ha kellene és le akarnánk, akkor a VM-ben lévő command továbbhívató innen
+            // így pl. egy mouse down event kivlátható szépen, anélkül hogy adatkötnénk
         }
     }
 }
