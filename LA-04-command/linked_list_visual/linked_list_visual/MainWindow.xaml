@@ -28,7 +28,7 @@
 
         <ListBox FontSize="20" Grid.Row="1"
                  ItemsSource="{Binding ProfileCollection}"
-                 SelectedItem="{Binding SelectedPlayer}">
+                 SelectedItem="{Binding SelectedProfile}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">

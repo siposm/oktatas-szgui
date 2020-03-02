@@ -34,13 +34,22 @@ namespace folderlister
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //  d: DataContext (XAML) >> csak design időben hozza létre a példányt (autocomplete)
+            //  DE futási időben nem, ezért kell itt létrehozni a példányt:
             viewModel = new MainWindowViewModel(currentDirectory);
             this.DataContext = viewModel;
         }
 
+
+
         // A minimálisan szükséges "logikán" kívül _nem_ teszünk mást a xaml.cs-be! 
         // Helyette command-okat használunk!
         // Lásd "open" button binding rész XAML-ben.
+        //
+        // A félévben jó és elég ha a button click-ekre vannak commandok létrehozva, másra nem kell.
+        // Akit érdekel viszont, hogy hogyan kell: https://docs.microsoft.com/en-us/archive/msdn-magazine/2013/may/mvvm-commands-relaycommands-and-eventtocommand
+        // Kulcsszavak: AttachedProperty, EventToCommand trigger
+
         private void ListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (viewModel.SelectedEntry == null) return;
@@ -53,6 +62,13 @@ namespace folderlister
             {
                 System.Diagnostics.Process.Start(viewModel.SelectedEntry.Name);
             }
+        }
+
+        private void Test(/* ... */)
+        {
+            // viewModel.SelectEntryCommand.Execute(null);
+            // ha kellene és le akarnánk, akkor a VM-ben lévő command továbbhívató innen
+            // így pl. egy mouse down event kivlátható szépen, anélkül hogy adatkötnénk
         }
     }
 }
