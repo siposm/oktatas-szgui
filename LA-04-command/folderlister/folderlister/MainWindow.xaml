@@ -3,18 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
         
         Title="{Binding CurrentDirectory}" Height="582.5" Width="383"
         
         xmlns:local="clr-namespace:folderlister.ViewModel" 
-        
+        mc:Ignorable="d"
         d:DataContext="{d:DesignInstance Type={x:Type local:MainWindowViewModel}}"
         Loaded="Window_Loaded">
-    <!--
-        designinstance >> menet közben látható mi történik itt a tervezőben... (design-time datacontext)
-        ha ezt kivesszük akkor is működik minden, csak itt tervezés közben  nem látszódnak a dolgok
-    -->
+
+    
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"></RowDefinition>
@@ -26,6 +24,7 @@
                  SelectedItem="{Binding SelectedEntry}"
                  MouseDoubleClick="ListBox_MouseDoubleClick">
         </ListBox>
+        
         <StackPanel Grid.Row="1">
             <Button Command="{Binding SelectEntryCommand}"
                 Content="OPEN the selected item / folder" Margin="10"></Button>
