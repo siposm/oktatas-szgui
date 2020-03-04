@@ -1,6 +1,7 @@
 ﻿using folderlister.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -16,26 +17,19 @@ namespace folderlister.BusinessLogic
             if (currentDirectory == string.Empty)
             {
                 foreach (DriveInfo akt in DriveInfo.GetDrives())
-                {
                     entries.Add(new DirectoryEntry(akt.Name, true));
-                }
             }
             else
             {
                 try
                 {
                     foreach (string subDir in Directory.GetDirectories(currentDirectory))
-                    {
                         entries.Add(new DirectoryEntry(subDir, true));
-                    }
+
                     foreach (string file in Directory.GetFiles(currentDirectory))
-                    {
                         entries.Add(new DirectoryEntry(file, false));
-                    }
                 }
-                catch (Exception)
-                {
-                }
+                catch (Exception) { }
             }
             return entries;
         }
@@ -50,17 +44,24 @@ namespace folderlister.BusinessLogic
                 window.Show();
             }
             else
-                System.Diagnostics.Process.Start(entry.Name);
+                Process.Start(entry.Name);
         }
 
         public void LogCurrent(string currentDirectory)
         {
-            StreamWriter sw = new StreamWriter("current_subfolders_and_files.txt");
+            string filename = "_LOGEG_folders_and_files.txt";
+
+            StreamWriter sw = new StreamWriter(filename);
+
             foreach (string subDir in Directory.GetDirectories(currentDirectory))
                 sw.WriteLine("[DIR]\t" + subDir);
+
             foreach (string file in Directory.GetFiles(currentDirectory))
                 sw.WriteLine("[FILE]\t" + file);
+
             sw.Close();
+
+            Process.Start(filename);
         }
     }
 }
