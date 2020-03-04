@@ -49,7 +49,7 @@ namespace folderlister.BusinessLogic
 
         public void LogCurrent(string currentDirectory)
         {
-            string filename = "_LOGEG_folders_and_files.txt";
+            string filename = "_LOGGED_folders_and_files.txt";
 
             StreamWriter sw = new StreamWriter(filename);
 
