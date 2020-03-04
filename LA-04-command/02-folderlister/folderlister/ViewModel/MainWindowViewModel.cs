@@ -33,12 +33,12 @@ namespace folderlister.ViewModel
 
             SelectEntryCommand = new RelayCommand(() => 
             {
-               this.directoryLogic.SelectEntry(SelectedEntry); // MUST reference the datafield!
+               this.directoryLogic.SelectEntry(SelectedEntry); // MUSZÁJ az adattagra hivatkozni (azaz this . dirlogic)!
             });
 
             LogCurrentCommand = new RelayCommand(() =>
             {
-                this.directoryLogic.LogCurrent(currentDirectory);
+                this.directoryLogic.LogCurrent(CurrentDirectory); // currentDirectory a belső változót jelenti, úgy nem lesz jó!
             });
         }
 
