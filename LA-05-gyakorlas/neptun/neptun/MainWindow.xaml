@@ -46,16 +46,24 @@
         <StackPanel Grid.Column="1" Grid.Row="1" Margin="20">
             <Label Content="ID" Background="Azure" FontWeight="Bold"/>
             <TextBox Text="{Binding SelectedProfile.ID}" IsEnabled="False"/>
+            
             <Label Content="Name" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
             <TextBox Text="{Binding SelectedProfile.Name}"/>
+            
             <Label Content="Active currently" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
-            <CheckBox IsChecked="{Binding SelectedProfile.IsActive}" Height="0"/>
-            <Label Content="Connections" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
+            <CheckBox IsChecked="{Binding SelectedProfile.IsActive}"/>
+
+            <Label Content="{Binding SelectedProfile.Connections}" ContentStringFormat="Connections ({0})" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
             <ProgressBar Minimum="0" Maximum="5000" Height="20" Value="{Binding SelectedProfile.Connections}" />
-            <Label Content="Completed credits" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
+            <Slider Minimum="0" Maximum="5000" Value="{Binding SelectedProfile.Connections}"/>
+
+            <Label Content="{Binding SelectedProfile.CompletedCredits}" ContentStringFormat="Completed credits ({0})" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
             <ProgressBar Minimum="0" Maximum="220" Height="20" Value="{Binding SelectedProfile.CompletedCredits}" />
+            <Slider Minimum="0" Maximum="5000" Value="{Binding SelectedProfile.CompletedCredits}"/>
+            
             <Label Content="Active semester count" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
             <TextBox Text="{Binding SelectedProfile.ActiveSemesterCount}"/>
+            
             <Label Content="Image url" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
             <TextBox Text="{Binding SelectedProfile.Image}"/>
         </StackPanel>
