@@ -17,10 +17,13 @@
 
         <StackPanel Grid.Row="1">
             <Label Content="Username:" />
-            <TextBox />
+            <TextBox x:Name="input_username" />
             <Label Content="Password:" />
-            <PasswordBox />
-            <Button Content="Login" Margin="0,50" Height="50" Width="100" Background="LightBlue" BorderBrush="White"/>
+            <PasswordBox x:Name="input_password"/>
+            <Button Click="LoginClick"
+                    Content="Login" 
+                    Margin="0,50" Height="50" Width="200"
+                    Background="LightBlue" BorderBrush="White"/>
         </StackPanel>
 
     </Grid>

@@ -27,7 +27,7 @@ namespace neptun.BusinessLogic
             if (database.ContainsKey(username) && database.ContainsValue(password))
                 return true;
 
-            return false;
+            throw new Exception("[ERR] Invalid credentials, please try again.");
         }
     }
 }
