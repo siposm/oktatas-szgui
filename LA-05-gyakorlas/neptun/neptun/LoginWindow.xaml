@@ -1,0 +1,27 @@
+﻿<Window x:Class="neptun.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:neptun"
+        mc:Ignorable="d"
+        FontSize="20"
+        Title="Neptun Login" Height="500" Width="500">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Source="https://neptun.org.hu/wp-content/uploads/2012/07/web_logo_v2.png" Width="150"/>
+
+        <StackPanel Grid.Row="1">
+            <Label Content="Username:" />
+            <TextBox />
+            <Label Content="Password:" />
+            <PasswordBox />
+            <Button Content="Login" Margin="0,50" Height="50" Width="100" Background="LightBlue" BorderBrush="White"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
