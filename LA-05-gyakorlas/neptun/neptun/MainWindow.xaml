@@ -27,7 +27,7 @@
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="10">
                         <Image Source="{Binding Image}" Height="60" Margin="10,0,20,0"/>
-                        <StackPanel>
+                        <StackPanel Width="400">
                             <Label Content="{Binding Name}" FontWeight="ExtraBold"/>
                             <Label Content="{Binding Hash}" ContentStringFormat="SYSTEM ID: {0}" FontSize="15"/>
                             <ProgressBar Minimum="0" Maximum="5000" Height="5"
