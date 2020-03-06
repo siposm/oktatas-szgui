@@ -72,7 +72,24 @@ namespace neptun.Model
 
         public override int GetHashCode()
         {
-            return ID.GetHashCode() * Name.GetHashCode();
+            return ID.GetHashCode() * ID.GetHashCode();
+
+            //return ID.GetHashCode() * Name.GetHashCode();
+            // error: System.ArgumentException: 'An item with the same key has already been added.'
+            // explanation: https://stackoverflow.com/questions/15966949/wpf-datagrid-item-with-the-same-key-has-already-been-added
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Profile)
+            {
+                Profile x = obj as Profile;
+                return x.ID == ID &&
+                    x.Name == Name &&
+                    x.BirthYear == BirthYear &&
+                    x.IsActive == IsActive;
+            }
+            return false;
         }
 
     }
