@@ -21,8 +21,8 @@
         <Image Grid.Row="0" Grid.Column="0" Source="https://neptun.org.hu/wp-content/uploads/2012/07/web_logo_v2.png" Width="150"/>
 
         <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Content="ADD" Padding="20,5" Background="MediumSpringGreen" BorderBrush="White" FontWeight="Bold"/>
-            <Button Content="REMOVE" Padding="20,5" Margin="20,0,0,0" Background="PaleVioletRed" BorderBrush="White" FontWeight="Bold"/>
+            <Button Command="{Binding AddCommand}" Content="ADD" Padding="20,5" Background="MediumSpringGreen" BorderBrush="White" FontWeight="Bold"/>
+            <Button Command="{Binding RemoveCommand}" Content="REMOVE" Padding="20,5" Margin="20,0,0,0" Background="PaleVioletRed" BorderBrush="White" FontWeight="Bold"/>
         </StackPanel>
         
         <ListBox Grid.Column="0" Grid.Row="1" Margin="20"

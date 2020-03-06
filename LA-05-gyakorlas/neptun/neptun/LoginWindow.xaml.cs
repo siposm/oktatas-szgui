@@ -29,7 +29,7 @@ namespace neptun
             LoginValidatorService lvs = new LoginValidatorService();
             try
             {
-                if (lvs.ValidateCredentials(input_username.Text, input_password.Password))
+                if (lvs.ValidateCredentials(input_username.Text, lvs.GenerateHash(input_password.Password)))
                 {
                     // open main window
                     //MessageBox.Show("OK"); // teszt
