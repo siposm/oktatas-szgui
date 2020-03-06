@@ -20,7 +20,9 @@ namespace neptun.BusinessLogic
                 { "hero" , "ae6c79d10f1fd410650790e63186ec108fa106325b52fbd88de21a43540e6f2c" },
                 { "root" , "ce5ca673d13b36118d54a7cf13aeb0ca012383bf771e713421b4d1fd841f539a" }
             };
+            // online sha generator: https://emn178.github.io/online-tools/sha256.html
         }
+
 
         public bool ValidateCredentials(string username, string passwdHash)
         {
