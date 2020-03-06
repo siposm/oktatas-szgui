@@ -1,4 +1,5 @@
 ﻿using neptun.BusinessLogic;
+using neptun.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,11 @@ namespace neptun
                 if (lvs.ValidateCredentials(input_username.Text, input_password.Password))
                 {
                     // open main window
-                    MessageBox.Show("OK");
+                    //MessageBox.Show("OK"); // teszt
+                    MainWindow mw = new MainWindow();
+                    MainWindowViewModel vm = new MainWindowViewModel();
+                    mw.DataContext = vm;
+                    mw.Show();
                 }
             }
             catch (Exception exc)
