@@ -55,6 +55,8 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 		- INotifyCollectionChanged (ObservableCollection alapján)
 		- IEnumerable & IEnumerator (listbox GUI feldolgozás)
 - LA05
+	- lost focus event
+	- converter (IValueConverter)
 - LA06
 - LA07
 - LA08
