@@ -37,8 +37,7 @@ namespace neptun.BusinessLogic
         {
             var z = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(input)).Select(x => x.ToString("x2"));
             string hashedPasswd = string.Empty;
-            foreach (var item in z)
-                hashedPasswd += item;
+            foreach (var item in z) hashedPasswd += item;
             return hashedPasswd;
         }
 
