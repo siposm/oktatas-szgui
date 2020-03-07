@@ -74,6 +74,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BusinessLogic\DataLoadingService.cs" />
+    <Compile Include="Converter\StatusToBackgroundConverter.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
@@ -124,8 +125,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Converter\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

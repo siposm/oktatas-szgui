@@ -4,9 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:neptun"
+        
+        
+        
+        xmlns:conv="clr-namespace:neptun.Converter"
+        
         mc:Ignorable="d"
         FontSize="20"
         Title="Neptun system" WindowState="Maximized">
+
+    <Window.Resources>
+        <conv:StatusToBackgroundConverter x:Key="StatusToBackgroundConverter"/>
+    </Window.Resources>
+    
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -34,7 +44,7 @@
                         <Image Source="{Binding Image}" Height="80" Margin="10,0,20,0"/>
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="{Binding Name}" FontWeight="Bold"/>
+                                <Label Content="{Binding Name}" FontWeight="Bold" Background="{Binding Path=IsActive, Converter={StaticResource StatusToBackgroundConverter}}"/>
                                 <Label Content="{Binding Hash}" ContentStringFormat="SYSTEM ID: {0}" FontSize="10"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
