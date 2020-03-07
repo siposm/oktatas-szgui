@@ -1,0 +1,92 @@
+﻿<Window x:Class="neptun.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:neptun"
+        
+        
+        
+        xmlns:conv1="clr-namespace:neptun.Converter"
+        xmlns:conv2="clr-namespace:neptun.Converter"
+        
+        mc:Ignorable="d"
+        FontSize="20"
+        Title="Neptun system" WindowState="Maximized">
+
+    <Window.Resources>
+        <conv1:StatusToBackgroundConverter x:Key="StatusToBackgroundConverter"/>
+        <conv2:StatusToStringConverter x:Key="StatusToStringConverter"/>
+    </Window.Resources>
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.Column="0" Source="https://neptun.org.hu/wp-content/uploads/2012/07/web_logo_v2.png" Width="150"/>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Command="{Binding AddCommand}" Content="ADD" Padding="20,5" Background="MediumSpringGreen" BorderBrush="White" FontWeight="Bold"/>
+            <Button Command="{Binding RemoveCommand}" Content="REMOVE" Padding="20,5" Margin="20,0,0,0" Background="PaleVioletRed" BorderBrush="White" FontWeight="Bold"/>
+        </StackPanel>
+        
+        <ListBox Grid.Column="0" Grid.Row="1" Margin="20"
+                 ItemsSource="{Binding ProfileCollection}"
+                 SelectedItem="{Binding SelectedProfile}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <Image Source="{Binding Image}" Height="80" Margin="10,0,20,0"/>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="{Binding Name}" FontWeight="Bold" Foreground="{Binding IsActive, Converter={StaticResource StatusToBackgroundConverter}}"/>
+                                <Label Content="{Binding IsActive, Converter={StaticResource StatusToStringConverter}}" FontSize="10"/>
+                                <Label Content="{Binding Hash}" ContentStringFormat="SYSTEM ID: {0}" FontSize="10"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <ProgressBar Minimum="0" Maximum="5000" Width="200" Height="5" Value="{Binding Connections}"/>
+                                <Label Content="{Binding Connections}" ContentStringFormat="(CONN: {0})" FontSize="15"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <ProgressBar Minimum="0" Maximum="220" Width="200" Height="5" Value="{Binding CompletedCredits}"/>
+                                <Label Content="{Binding CompletedCredits}" ContentStringFormat="(CRED: {0})" FontSize="15"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="20">
+            <Label Content="ID" Background="Azure" FontWeight="Bold"/>
+            <TextBox Text="{Binding SelectedProfile.ID}" IsEnabled="False"/>
+            
+            <Label Content="Name" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
+            <TextBox Text="{Binding SelectedProfile.Name}"/>
+            
+            <Label Content="Active currently" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
+            <CheckBox IsChecked="{Binding SelectedProfile.IsActive}"/>
+
+            <Label Content="{Binding SelectedProfile.Connections}" ContentStringFormat="Connections ({0})" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
+            <ProgressBar Minimum="0" Maximum="5000" Height="20" Value="{Binding SelectedProfile.Connections}" />
+            <Slider Minimum="0" Maximum="5000" Value="{Binding SelectedProfile.Connections}"/>
+
+            <Label Content="{Binding SelectedProfile.CompletedCredits}" ContentStringFormat="Completed credits ({0})" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
+            <ProgressBar Minimum="0" Maximum="220" Height="20" Value="{Binding SelectedProfile.CompletedCredits}" />
+            <Slider Minimum="0" Maximum="220" Value="{Binding SelectedProfile.CompletedCredits}"/>
+            
+            <Label Content="Active semester count" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
+            <TextBox Text="{Binding SelectedProfile.ActiveSemesterCount}"/>
+            
+            <Label Content="Image url" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
+            <TextBox Text="{Binding SelectedProfile.Image}"/>
+        </StackPanel>
+    </Grid>
+</Window>

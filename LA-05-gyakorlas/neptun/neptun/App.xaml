@@ -1,0 +1,9 @@
+﻿<Application x:Class="neptun.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:neptun"
+             StartupUri="LoginWindow.xaml">  <!-- itt lehet megadni, hogy induláskor melyik ablak legyen az alapértelmezetten megnyíló -->
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
