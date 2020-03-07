@@ -31,12 +31,20 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="10">
-                        <Image Source="{Binding Image}" Height="60" Margin="10,0,20,0"/>
-                        <StackPanel Width="400">
-                            <Label Content="{Binding Name}" FontWeight="ExtraBold"/>
-                            <Label Content="{Binding Hash}" ContentStringFormat="SYSTEM ID: {0}" FontSize="15"/>
-                            <ProgressBar Minimum="0" Maximum="5000" Height="5"
-                                         Value="{Binding Connections}"/>
+                        <Image Source="{Binding Image}" Height="80" Margin="10,0,20,0"/>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="{Binding Name}" FontWeight="Bold"/>
+                                <Label Content="{Binding Hash}" ContentStringFormat="SYSTEM ID: {0}" FontSize="10"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <ProgressBar Minimum="0" Maximum="5000" Width="200" Height="5" Value="{Binding Connections}"/>
+                                <Label Content="{Binding Connections}" ContentStringFormat="(CONN: {0})" FontSize="15"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <ProgressBar Minimum="0" Maximum="220" Width="200" Height="5" Value="{Binding CompletedCredits}"/>
+                                <Label Content="{Binding CompletedCredits}" ContentStringFormat="(CRED: {0})" FontSize="15"/>
+                            </StackPanel>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>
@@ -59,7 +67,7 @@
 
             <Label Content="{Binding SelectedProfile.CompletedCredits}" ContentStringFormat="Completed credits ({0})" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
             <ProgressBar Minimum="0" Maximum="220" Height="20" Value="{Binding SelectedProfile.CompletedCredits}" />
-            <Slider Minimum="0" Maximum="5000" Value="{Binding SelectedProfile.CompletedCredits}"/>
+            <Slider Minimum="0" Maximum="220" Value="{Binding SelectedProfile.CompletedCredits}"/>
             
             <Label Content="Active semester count" Margin="0,20,0,0" Background="Azure" FontWeight="Bold"/>
             <TextBox Text="{Binding SelectedProfile.ActiveSemesterCount}"/>
