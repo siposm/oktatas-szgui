@@ -31,12 +31,11 @@ namespace neptun
             {
                 if (lvs.ValidateCredentials(input_username.Text, lvs.GenerateHash(input_password.Password)))
                 {
-                    // open main window
-                    //MessageBox.Show("OK"); // teszt
                     MainWindow mw = new MainWindow();
                     MainWindowViewModel vm = new MainWindowViewModel();
                     mw.DataContext = vm;
                     mw.Show();
+                    this.Close();
                 }
             }
             catch (Exception exc)
