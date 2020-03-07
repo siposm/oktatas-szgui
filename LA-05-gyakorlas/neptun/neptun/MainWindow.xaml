@@ -7,14 +7,16 @@
         
         
         
-        xmlns:conv="clr-namespace:neptun.Converter"
+        xmlns:conv1="clr-namespace:neptun.Converter"
+        xmlns:conv2="clr-namespace:neptun.Converter"
         
         mc:Ignorable="d"
         FontSize="20"
         Title="Neptun system" WindowState="Maximized">
 
     <Window.Resources>
-        <conv:StatusToBackgroundConverter x:Key="StatusToBackgroundConverter"/>
+        <conv1:StatusToBackgroundConverter x:Key="StatusToBackgroundConverter"/>
+        <conv2:StatusToStringConverter x:Key="StatusToStringConverter"/>
     </Window.Resources>
     
     <Grid Margin="20">
@@ -44,7 +46,8 @@
                         <Image Source="{Binding Image}" Height="80" Margin="10,0,20,0"/>
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="{Binding Name}" FontWeight="Bold" Background="{Binding Path=IsActive, Converter={StaticResource StatusToBackgroundConverter}}"/>
+                                <Label Content="{Binding Name}" FontWeight="Bold" Foreground="{Binding IsActive, Converter={StaticResource StatusToBackgroundConverter}}"/>
+                                <Label Content="{Binding IsActive, Converter={StaticResource StatusToStringConverter}}" FontSize="10"/>
                                 <Label Content="{Binding Hash}" ContentStringFormat="SYSTEM ID: {0}" FontSize="10"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">

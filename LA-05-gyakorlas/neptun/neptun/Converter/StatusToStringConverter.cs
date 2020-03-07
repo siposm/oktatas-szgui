@@ -5,19 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
-using System.Windows.Media;
 
 namespace neptun.Converter
 {
-    class StatusToBackgroundConverter : IValueConverter
+    class StatusToStringConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             bool isActive = (bool)value;
             if (isActive)
-                return Brushes.LimeGreen; 
+                return "ACTIVE";
             else
-                return Brushes.OrangeRed;
+                return "PASSIVE";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

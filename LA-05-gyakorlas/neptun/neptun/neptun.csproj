@@ -75,6 +75,7 @@
     </ApplicationDefinition>
     <Compile Include="BusinessLogic\DataLoadingService.cs" />
     <Compile Include="Converter\StatusToBackgroundConverter.cs" />
+    <Compile Include="Converter\StatusToStringConverter.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
