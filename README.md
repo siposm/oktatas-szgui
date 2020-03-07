@@ -57,6 +57,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 - LA05
 	- lost focus event
 	- converter (IValueConverter)
+	- startup uri (app.xaml)
 - LA06
 - LA07
 - LA08
