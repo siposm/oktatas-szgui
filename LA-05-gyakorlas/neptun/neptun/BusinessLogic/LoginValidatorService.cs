@@ -41,5 +41,13 @@ namespace neptun.BusinessLogic
                 hashedPasswd += item;
             return hashedPasswd;
         }
+
+        public bool CheckLoginUsername(string inputUsername)
+        {
+            if (inputUsername.Length > 3)
+                return true;
+
+            throw new Exception("[ERR] Username should be at lest 4 characters. Please retry.");
+        }
     }
 }

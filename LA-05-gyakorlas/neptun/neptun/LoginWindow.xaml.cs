@@ -48,5 +48,24 @@ namespace neptun
                     MessageBoxImage.Error);
             }
         }
+
+        private void CheckLogin(object sender, RoutedEventArgs e)
+        {
+            LoginValidatorService lvs = new LoginValidatorService();
+
+            try
+            {
+                lvs.CheckLoginUsername(input_username.Text);
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(
+                    exc.Message,
+                    "ERROR",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+
+        }
     }
 }

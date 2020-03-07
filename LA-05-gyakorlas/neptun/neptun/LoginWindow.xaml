@@ -17,7 +17,7 @@
 
         <StackPanel Grid.Row="1">
             <Label Content="Username:" />
-            <TextBox x:Name="input_username" />
+            <TextBox x:Name="input_username" LostFocus="CheckLogin"/>
             <Label Content="Password:" />
             <PasswordBox x:Name="input_password"/>
             <Button Click="LoginClick"
