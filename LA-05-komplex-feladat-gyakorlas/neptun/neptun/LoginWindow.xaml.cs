@@ -48,6 +48,7 @@ namespace neptun
             }
         }
 
+        // LostFocus esetén használjuk!
         private void CheckLogin(object sender, RoutedEventArgs e)
         {
             LoginValidatorService lvs = new LoginValidatorService();

@@ -92,5 +92,13 @@ namespace neptun.Model
             return false;
         }
 
+        public void CopyFrom(Profile other)
+        {
+            // WARNING: creates shallow copy - no problem for now
+            // WARNING: reflection is SLOOOOOOOOW - no problem for now
+            // Possible: using AutoMapper;
+            this.GetType().GetProperties().ToList().
+                ForEach(property => property.SetValue(this, property.GetValue(other)));
+        }
     }
 }
