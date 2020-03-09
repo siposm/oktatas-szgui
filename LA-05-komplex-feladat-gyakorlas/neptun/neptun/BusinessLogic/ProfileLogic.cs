@@ -27,7 +27,7 @@ namespace neptun.BusinessLogic
             messengerService.Send("ADD OK", "LogicResult");
         }
 
-        public void AddProfile(IList<Profile> collection, Profile toBeAdded)
+        public void AddExistingProfile(IList<Profile> collection, Profile toBeAdded)
         {
             collection.Add(toBeAdded);
             messengerService.Send("ADD OK", "LogicResult");

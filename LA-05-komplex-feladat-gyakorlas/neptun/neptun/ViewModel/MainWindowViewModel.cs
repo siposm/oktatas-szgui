@@ -35,7 +35,7 @@ namespace neptun.ViewModel
             ProfileCollection = new ObservableCollection<Profile>();
 
             DataLoadingService dls = new DataLoadingService();
-            dls.FetchData().ForEach(x => this.logic.AddProfile(ProfileCollection, x));
+            dls.FetchData().ForEach(x => this.logic.AddExistingProfile(ProfileCollection, x));
 
             AddCommand = new RelayCommand(() => this.AddNew());
             RemoveCommand = new RelayCommand(() => this.Remove());

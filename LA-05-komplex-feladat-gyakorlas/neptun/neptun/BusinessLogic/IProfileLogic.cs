@@ -9,7 +9,7 @@ namespace neptun.BusinessLogic
 {
     interface IProfileLogic
     {
-        void AddProfile(IList<Profile> collection, Profile toBeAdded);
+        void AddExistingProfile(IList<Profile> collection, Profile toBeAdded);
         void AddNewProfile(IList<Profile> collection);
         void RemoveProfile(IList<Profile> collection, Profile toBeRemoved);
     }
