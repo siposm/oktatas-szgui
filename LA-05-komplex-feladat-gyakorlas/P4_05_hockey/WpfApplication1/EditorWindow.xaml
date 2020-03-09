@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApplication1.EditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:WpfApplication1.VM"
+        xmlns:ui="clr-namespace:WpfApplication1.UI"
+        Title="NHLRoster" Height="221.238" Width="239.5">
+    <Window.Resources>
+        <ui:HeightToStringConverter x:Key="HeightToStringConverter" />
+        <vm:EditorViewModel x:Key="VM" />
+    </Window.Resources>
+    <Grid DataContext="{StaticResource VM}">
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Height" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="Status" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="Position" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top"/>
+
+        <TextBox Text="{Binding Path=Player.Name}" HorizontalAlignment="Left" Height="23" Margin="63,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox Text="{Binding Path=Player.Height, Converter={StaticResource HeightToStringConverter}}" HorizontalAlignment="Left" Height="23" Margin="63,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox ItemsSource="{Binding Path=Statuses}" SelectedItem="{Binding Path=Player.Status}" HorizontalAlignment="Left" Margin="63,66,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox ItemsSource="{Binding Path=Positions}" SelectedItem="{Binding Path=Player.Position}" HorizontalAlignment="Left" Margin="63,92,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="OK" HorizontalAlignment="Left" Margin="17,125,0,0" VerticalAlignment="Top" Width="75" Click="OK_Click"/>
+        <Button Content="CANCEL" HorizontalAlignment="Left" Margin="97,125,0,0" VerticalAlignment="Top" Width="75" Click="Cancel_Click" />
+    </Grid>
+</Window>

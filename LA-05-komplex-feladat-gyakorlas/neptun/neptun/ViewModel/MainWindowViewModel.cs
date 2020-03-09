@@ -16,6 +16,8 @@ namespace neptun.ViewModel
     class MainWindowViewModel : ViewModelBase
     {
         private IProfileLogic logic;
+        public ICommand AddCommand { get; private set; }
+        public ICommand RemoveCommand { get; private set; }
         public ObservableCollection<Profile> ProfileCollection { get; private set; }
         private Profile selectedProfile;
         public Profile SelectedProfile
@@ -23,11 +25,8 @@ namespace neptun.ViewModel
             get { return selectedProfile; }
             set { Set(ref selectedProfile, value); } // viewmodelbase öröklődés miatt kell a Set() használat, különben nem működik a binding a sima get;set; verzióval
         }
-        //public Profile SelectedProfile { get; set; } 
 
-        public ICommand AddCommand { get; private set; }
-        public ICommand RemoveCommand { get; private set; }
-
+        
         public MainWindowViewModel(IProfileLogic logic)
         {
             this.logic = logic;
@@ -44,6 +43,7 @@ namespace neptun.ViewModel
         // csak azért, hogy legyen nulla paraméteres ctor
         public MainWindowViewModel() : this(ServiceLocator.Current.GetInstance<IProfileLogic>())
         {
+            // csak az ős továbbhívása...
         }
 
         private void AddNew()
