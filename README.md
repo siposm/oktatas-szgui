@@ -55,9 +55,12 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 		- INotifyCollectionChanged (ObservableCollection alapján)
 		- IEnumerable & IEnumerator (listbox GUI feldolgozás)
 - LA05
-	- lost focus event
+	- lost focus event (textbox)
 	- converter (IValueConverter)
 	- startup uri (app.xaml)
+	- dependency injection (viewmodel <-> logic)
+	- IoC (inversion of control)
+		- app.xaml.cs
 - LA06
 - LA07
 - LA08
