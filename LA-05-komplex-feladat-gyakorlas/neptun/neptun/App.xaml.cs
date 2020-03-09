@@ -14,12 +14,13 @@ namespace neptun
 {
     public partial class App : Application
     {
-        //public App()
-        //{
-        //    ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
+        // IoC konfigurálása
+        public App()
+        {
+            ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
-        //    SimpleIoc.Default.Register<IMessenger>(() => Messenger.Default);
-        //    SimpleIoc.Default.Register<IProfileLogic, ProfileLogic>();
-        //}
+            SimpleIoc.Default.Register<IMessenger>(() => Messenger.Default);
+            SimpleIoc.Default.Register<IProfileLogic, ProfileLogic>();
+        }
     }
 }

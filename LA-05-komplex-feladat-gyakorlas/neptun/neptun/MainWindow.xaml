@@ -12,7 +12,9 @@
         
         mc:Ignorable="d"
         FontSize="20"
-        Title="Neptun system" WindowState="Maximized">
+        Title="Neptun system" WindowState="Maximized"
+        
+        Loaded="Window_Loaded">
 
     <Window.Resources>
         <conv1:StatusToBackgroundConverter x:Key="StatusToBackgroundConverter"/>

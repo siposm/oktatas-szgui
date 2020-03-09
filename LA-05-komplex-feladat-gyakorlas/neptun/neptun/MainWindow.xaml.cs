@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Messaging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,15 @@ namespace neptun
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();   
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Messenger.Default.Register<string>(this, "LogicResult", (msg) =>
+            {
+                MessageBox.Show(msg);
+            });
         }
     }
 }

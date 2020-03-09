@@ -32,7 +32,7 @@ namespace neptun
                 if (lvs.ValidateCredentials(input_username.Text, lvs.GenerateHash(input_password.Password)))
                 {
                     MainWindow mw = new MainWindow();
-                    MainWindowViewModel vm = new MainWindowViewModel(new ProfileLogic());
+                    MainWindowViewModel vm = new MainWindowViewModel();
                     mw.DataContext = vm;
                     mw.Show();
                     this.Close();
