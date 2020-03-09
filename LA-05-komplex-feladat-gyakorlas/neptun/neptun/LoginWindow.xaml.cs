@@ -26,6 +26,9 @@ namespace neptun
         // passwordbox-ot nem lehet adatkötni különböző biztonsággal kapcsolatos okok miatt, ezért maradt az old-fashioned-way
         private void LoginClick(object sender, RoutedEventArgs e)
         {
+            // az itt lévő dolgokat is esetleg egy külön LoginLogic-ba ki lehet szervezni
+            // és onnan használni a messenger-t
+
             LoginValidatorService lvs = new LoginValidatorService();
             try
             {

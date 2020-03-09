@@ -42,8 +42,7 @@ namespace neptun.ViewModel
         }
 
         // csak azért, hogy legyen nulla paraméteres ctor
-        public MainWindowViewModel()
-           : this(ServiceLocator.Current.GetInstance<IProfileLogic>())
+        public MainWindowViewModel() : this(ServiceLocator.Current.GetInstance<IProfileLogic>())
         {
         }
 
