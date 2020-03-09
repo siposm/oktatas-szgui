@@ -16,8 +16,15 @@ namespace neptun.ViewModel
     class MainWindowViewModel : ViewModelBase
     {
         IProfileLogic logic;
-        public ObservableCollection<Profile> ProfileCollection { get; set; }
-        public Profile SelectedProfile { get; set; }
+        public ObservableCollection<Profile> ProfileCollection { get; private set; }
+        //public Profile SelectedProfile { get; set; }
+        private Profile selectedProfile;
+        public Profile SelectedProfile
+        {
+            get { return selectedProfile; }
+            set { Set(ref selectedProfile, value); }
+        }
+
         public ICommand AddCommand { get; private set; }
         public ICommand RemoveCommand { get; private set; }
 
