@@ -74,6 +74,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BusinessLogic\DataLoadingService.cs" />
+    <Compile Include="BusinessLogic\IProfileLogic.cs" />
+    <Compile Include="BusinessLogic\ProfileLogic.cs" />
     <Compile Include="Converter\StatusToBackgroundConverter.cs" />
     <Compile Include="Converter\StatusToStringConverter.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
