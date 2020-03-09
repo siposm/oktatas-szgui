@@ -13,17 +13,21 @@ namespace neptun.ViewModel
 {
     class MainWindowViewModel
     {
-        public ObservableCollection<Profile> ProfileCollection { get; set; }
+        IProfileLogic logic;
+        public ObservableCollection<Profile> ProfileCollection { get; private set; }
         public Profile SelectedProfile { get; set; }
         public ICommand AddCommand { get; private set; }
         public ICommand RemoveCommand { get; private set; }
 
-        public MainWindowViewModel()
+        public MainWindowViewModel(IProfileLogic logic)
         {
+            this.logic = logic;
+
             ProfileCollection = new ObservableCollection<Profile>();
 
             DataLoadingService dls = new DataLoadingService();
-            dls.FetchData().ForEach(x => ProfileCollection.Add(x));
+            //dls.FetchData().ForEach(x => ProfileCollection.Add(x));
+            dls.FetchData().ForEach(x => this.logic.AddProfile(ProfileCollection, x));
 
             AddCommand = new RelayCommand(() => this.AddNew());
             RemoveCommand = new RelayCommand(() => this.Remove());
@@ -33,7 +37,7 @@ namespace neptun.ViewModel
         {
             DataLoadingService dls = new DataLoadingService();
 
-            ProfileCollection.Add(new Profile()
+            this.logic.AddProfile(ProfileCollection, new Profile()
             {
                 ID = dls.GenerateID()
             });
@@ -41,7 +45,7 @@ namespace neptun.ViewModel
 
         private void Remove()
         {
-            ProfileCollection.Remove(SelectedProfile);
+            this.logic.RemoveProfile(ProfileCollection, SelectedProfile);
         }
     }
 }
