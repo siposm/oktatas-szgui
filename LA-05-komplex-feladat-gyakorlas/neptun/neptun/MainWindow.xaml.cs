@@ -27,7 +27,11 @@ namespace neptun
         {
             Messenger.Default.Register<string>(this, "LogicResult", (msg) =>
             {
-                MessageBox.Show(msg);
+                MessageBox.Show(
+                    msg,
+                    "PROFILE DELETION",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Information);
             });
         }
     }

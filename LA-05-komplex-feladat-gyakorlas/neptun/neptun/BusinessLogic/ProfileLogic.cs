@@ -24,13 +24,13 @@ namespace neptun.BusinessLogic
             {
                 ID = dls.GenerateID()
             });
-            messengerService.Send("ADD OK", "LogicResult");
+            //messengerService.Send("ADD OK", "LogicResult");
         }
 
         public void AddExistingProfile(IList<Profile> collection, Profile toBeAdded)
         {
             collection.Add(toBeAdded);
-            messengerService.Send("ADD OK", "LogicResult");
+            //messengerService.Send("ADD OK", "LogicResult");
         }
 
         public void RemoveProfile(IList<Profile> collection, Profile toBeRemoved)
