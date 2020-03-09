@@ -12,22 +12,36 @@ namespace neptun.BusinessLogic
     {
         IMessenger messengerService;
 
+        public ProfileLogic()
+        {
+
+        }
+
         public ProfileLogic(IMessenger service)
         {
             messengerService = service;
         }
 
+        public void AddNewProfile(IList<Profile> collection)
+        {
+            DataLoadingService dls = new DataLoadingService();
+            collection.Add(new Profile()
+            {
+                ID = dls.GenerateID()
+            });
+            //messengerService.Send("ADD OK", "LogicResult");
+        }
+
         public void AddProfile(IList<Profile> collection, Profile toBeAdded)
         {
-            // itt lehetne előtte sok féle/fajta vizsgálat, szűrés, stb. >> ezért van külön LOGIC-ba kiszervezve
             collection.Add(toBeAdded);
-            messengerService.Send("ADD OK", "LogicResult");
+            //messengerService.Send("ADD OK", "LogicResult");
         }
 
         public void RemoveProfile(IList<Profile> collection, Profile toBeRemoved)
         {
             collection.Remove(toBeRemoved);
-            messengerService.Send("DEL OK", "LogicResult");
+            //messengerService.Send("DEL OK", "LogicResult");
         }
     }
 }

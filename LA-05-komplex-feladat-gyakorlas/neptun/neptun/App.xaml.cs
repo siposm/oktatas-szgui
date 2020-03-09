@@ -1,4 +1,8 @@
-﻿using System;
+﻿using CommonServiceLocator;
+using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Messaging;
+using neptun.BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -8,10 +12,14 @@ using System.Windows;
 
 namespace neptun
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
+        //public App()
+        //{
+        //    ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
+
+        //    SimpleIoc.Default.Register<IMessenger>(() => Messenger.Default);
+        //    SimpleIoc.Default.Register<IProfileLogic, ProfileLogic>();
+        //}
     }
 }
