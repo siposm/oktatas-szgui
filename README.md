@@ -57,10 +57,12 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 - LA05
 	- lost focus event (textbox)
 	- converter (IValueConverter)
-	- startup uri (app.xaml)
 	- dependency injection (viewmodel <-> logic)
-	- IoC (inversion of control)
+	- IoC (inversion of control) container
 		- app.xaml.cs
+	- login feature
+		- startup uri (app.xaml)
+		- hashed password
 - LA06
 - LA07
 - LA08
