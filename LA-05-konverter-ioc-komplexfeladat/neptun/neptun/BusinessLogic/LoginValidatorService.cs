@@ -16,6 +16,9 @@ namespace neptun.BusinessLogic
             return new Dictionary<string, string>()
             {
                 // username <> password (sha256) >> never use plain text!
+                // admin - admin123
+                // hero - hero
+                // root - toor
                 { "admin" , "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9" },
                 { "hero" , "ae6c79d10f1fd410650790e63186ec108fa106325b52fbd88de21a43540e6f2c" },
                 { "root" , "ce5ca673d13b36118d54a7cf13aeb0ca012383bf771e713421b4d1fd841f539a" }
@@ -27,8 +30,10 @@ namespace neptun.BusinessLogic
         public bool ValidateCredentials(string username, string passwdHash)
         {
             Dictionary<string, string> database = GetValidUsers();
-            if (database.ContainsKey(username) && database.ContainsValue(passwdHash))
-                return true;
+            //if (database.ContainsKey(username) && database.ContainsValue(passwdHash)) // probléma: admin - toor párossal is be lehet lépni...
+            foreach (var item in database)
+                if (item.Key == username && item.Value == passwdHash)
+                    return true;
 
             throw new Exception("[ERR] Invalid credentials, please try again.");
         }
