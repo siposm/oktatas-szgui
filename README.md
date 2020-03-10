@@ -63,6 +63,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 	- login feature
 		- startup uri (app.xaml)
 		- hashed password
+	- window state (full screen)
 - LA06
 - LA07
 - LA08
