@@ -56,7 +56,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 		- IEnumerable & IEnumerator (listbox GUI feldolgozás)
 - LA05
 	- lost focus event (textbox)
-	- converter (IValueConverter)
+	- messenger (mediator design pattern)
 	- dependency injection (viewmodel <-> logic)
 	- IoC (inversion of control) container
 		- app.xaml.cs
@@ -64,6 +64,7 @@ Egyéb anyagok az oktatói oldalamon (http://users.nik.uni-obuda.hu/siposm/szgui
 		- startup uri (app.xaml)
 		- hashed password
 	- window state (full screen)
+	- converter (IValueConverter)
 - LA06
 - LA07
 - LA08
