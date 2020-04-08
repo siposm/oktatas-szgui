@@ -1,7 +1,7 @@
 # FONTOS INFÓK
 
 ## [0]
-Felraktam a friss kiértékelt változatát az MK3-nak. Két csapat kivételével mindenkié oké. A két csapatnak **utolsó** határidő a javításra (lévén, hogy ez már a sokadik iteráció): 2020.04.10. 23:59:59. Sikertelen leadás esetén a félévest nem fogom tudni elfogadni.
+Felraktam a friss kiértékelt változatát az MK3-nak. Két csapat kivételével mindenkié oké. A két csapatnak **utolsó** határidő a javításra (lévén, hogy ez már a sokadik iteráció): `2020.04.10. 23:59:59`. Sikertelen leadás esetén a félévest nem fogom tudni elfogadni.
 Link: https://gitlab.com/siposm/oktatas-szgui-19202/-/blob/release/LA-00-tovabbi-anyagok/DIAG-review.pdf
 
 ## [1]
@@ -24,3 +24,4 @@ A két új, videós MK esetén az elvárás: készíteni egy **maximum** 2 perce
 - MK5.5 = videó, lásd fentebb
 - MK6 = május 17. gitstat
 
+... plusz egy félév végi teljes bemutató, de erről infók később.
