@@ -10,8 +10,8 @@ A prog4 req. doksi frissült a határidők tekintetében, illetve megjelent két
 *"Az április 20. és május 4. napokkal kezdődő héten a gyakorlatvezetővel személyes vagy videós távbemutatót kell tartani a projekt aktuális állásáról, és a távbemutató napján emailben listát kell küldeni a gyakorlatvezetőnek arról, hogy mi az, ami még nincs kész a projektben, milyen fejlesztési feladatok vannak hátra."*
 
 Ezen két dátum a hozzám járók esetében:
-- 2020.04.22. 18:00 [MK4.5] >> https://forms.gle/bWuNmV7p5GqbTyws9
-- 2020.05.06. 18:00 [MK5.5] >> https://forms.gle/WY65GWKzdLoGDZoJ7
+- `2020.04.22. 18:00` >> MK4.5 >> https://forms.gle/bWuNmV7p5GqbTyws9
+- `2020.05.06. 18:00` >> MK5.5 >> https://forms.gle/WY65GWKzdLoGDZoJ7
 
 Mind a két MK-hoz tartozik 1-1 form, figyeljetek rá, hogy NE keverjétek össze őket.
 
