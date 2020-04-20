@@ -10,7 +10,7 @@
 ✔ Mindegyik OK.
 
 ## 2020.04.15. (eredeti: 03.29.) [MK3] -- DIAG doksi
-retry 1x
+❌ retry 1x
 - LA-06 GROUP 03 : Varga Balázs - Hegedűs Dávid Csaba
 - LA-06 GROUP 01 : Szén Dávid - Czeglédy Balázs
 - LA-07 GROUP 06 : Anderle Dániel Attila - Reményi Damján
@@ -23,18 +23,19 @@ retry 1x
 - LA-07 GROUP 08 : Hanula Benedek - Tumpek Dávid
 - LA-07 GROUP 11 : Koczka Bence - Torma László Márk
 
-retry 2x
+❌ retry 2x
 - LA-05 GROUP 02 : Szekeres Beatrix Zita - Kovács Patrik Gábor
 - LA-08 GROUP 09 : Barkaszi Ádám István - Varga Dániel András
 - LA-05 GROUP 05 : Vékony Martin Gábor - Németh Bálint
 
-retry 3x
+❌ retry 3x
 - LA-07 GROUP 05 : Party Bence András - Kriston Dávid Ákos
 - LA-05 GROUP 05 : Vékony Martin Gábor - Németh Bálint
 
+✔ Végül mindegyik OK.
 
 ## 2020.04.20. [MK4] -- Repository, GameModel + GameLogic/Tests
-Nincs repó létrehozva egyáltalán:
+❌ Nincs repó létrehozva egyáltalán:
 - LA-05 GROUP 04 :  Herczeg Kristóf István - Akácz Máté
 - LA-07 GROUP 01 :  Kovács Viktor - Gönczi Norbert
 - LA-07 GROUP 11 :  Koczka Bence - Torma László Márk
