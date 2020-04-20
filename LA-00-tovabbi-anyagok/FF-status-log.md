@@ -42,3 +42,4 @@
 - LA-08 GROUP 01 :  Baka Richárd - Mellau Vendel József
 - LA-08 GROUP 11 :  Sriffert Ferenc Szilveszter - Faldina Lénárd
 
+## 2020.04.20. [MK4.5] -- Videós helyzetjelentés
