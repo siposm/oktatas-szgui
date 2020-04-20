@@ -1,19 +1,15 @@
 # FF LOG
 
-## 2020.02.21.
-### Csapatbeosztás
-Mindegyik OK.
+## 2020.02.21. -- Csapatbeosztás
+✔ Mindegyik OK.
 
-## 2020.03.01.
-### Témaötletek (MK1)
-Mindegyik OK.
+## 2020.03.01. [MK1] -- Témaötletek
+✔ Mindegyik OK.
 
-## 2020.03.19.
-### GDD doksi leadása (MK2):
-Mindegyik OK.
+## 2020.03.19. [MK2] -- GDD doksi
+✔ Mindegyik OK.
 
-## 2020.04.15. (eredeti: 03.29.)
-### DIAG doksi leadása (MK3):
+## 2020.04.15. (eredeti: 03.29.) [MK3] -- DIAG doksi
 retry 1x
 - LA-06 GROUP 03 : Varga Balázs - Hegedűs Dávid Csaba
 - LA-06 GROUP 01 : Szén Dávid - Czeglédy Balázs
@@ -32,13 +28,13 @@ retry 2x
 - LA-08 GROUP 09 : Barkaszi Ádám István - Varga Dániel András
 - LA-05 GROUP 05 : Vékony Martin Gábor - Németh Bálint
 
-retry 3x (last)
+retry 3x
 - LA-07 GROUP 05 : Party Bence András - Kriston Dávid Ákos
 - LA-05 GROUP 05 : Vékony Martin Gábor - Németh Bálint
 
 
-## 2020.04.20.
-### Nincs repó létrehozva egyáltalán (MK4 késés / nincs):
+## 2020.04.20. [MK4] -- Repository, GameModel + GameLogic/Tests
+Nincs repó létrehozva egyáltalán:
 - LA-05 GROUP 04 :  Herczeg Kristóf István - Akácz Máté
 - LA-07 GROUP 01 :  Kovács Viktor - Gönczi Norbert
 - LA-07 GROUP 11 :  Koczka Bence - Torma László Márk
