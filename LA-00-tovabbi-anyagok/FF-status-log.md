@@ -42,3 +42,25 @@
 - LA-08 GROUP 01 :  Baka Richárd - Mellau Vendel József
 - LA-08 GROUP 11 :  Sriffert Ferenc Szilveszter - Faldina Lénárd
 
+## 2020.04.22. [MK4.5] -- Videós helyzetjelentés
+❌ Nincs *gameplay* bemutatva csak kódgörgetés:
+- LA-05 GROUP 03 :  Héni Kristóf - Fila Norbert László
+- LA-07 GROUP 02 :  Főző Árpád - Balázsi Edina
+- LA-07 GROUP 06 :  Anderle Dániel Attila - Reményi Damján
+- LA-08 GROUP 12 :  Lukács Andrea Eszter - Horváth Ádám
+- LA-06 GROUP 06 :  Schléger Balázs - Szalay Tamás Imre
+- LA-08 GROUP 03 :  Tomcsányi Donát - Molnár Máté
+- LA-07 GROUP 04 :  Németh Kristóf - Csáki Péter
+- LA-08 GROUP 07 :  Pirityi István - Duzmath Bálint
+- LA-05 GROUP 06 :  Horti Kristóf - Andruskó Zoltán
+- LA-07 GROUP 11 :  Koczka Bence - Torma László Márk
+- LA-07 GROUP 07 :  Hajdú András - Simon Péter
+- LA-05 GROUP 04 :  Herczeg Kristóf István - Akácz Máté
+
+❌ Nem adtak le mérföldkövet:
+- LA-05 GROUP 10 :  Pintér Zoltán Róbert - Póta Máté
+- LA-06 GROUP 05 :  Remzső Milán - Szabó Péter
+- LA-07 GROUP 01 :  Kovács Viktor - Gönczi Norbert
+- LA-07 GROUP 05 :  Party Bence András - Kriston Dávid Ákos
+- LA-08 GROUP 09 :  Barkaszi Ádám István - Varga Dániel András
+- LA-08 GROUP 11 :  Sriffert Ferenc Szilveszter - Faldina Lénárd
