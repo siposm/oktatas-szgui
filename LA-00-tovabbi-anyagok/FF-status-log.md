@@ -62,5 +62,5 @@
 - LA-06 GROUP 05 :  Remzső Milán - Szabó Péter
 - LA-07 GROUP 01 :  Kovács Viktor - Gönczi Norbert
 - LA-07 GROUP 05 :  Party Bence András - Kriston Dávid Ákos
-- LA-08 GROUP 09 :  Barkaszi Ádám István - Varga Dániel András
+- LA-08 GROUP 09 :  Barkaszi Ádám István - Varga Dániel András // késve bemutatva
 - LA-08 GROUP 11 :  Sriffert Ferenc Szilveszter - Faldina Lénárd
