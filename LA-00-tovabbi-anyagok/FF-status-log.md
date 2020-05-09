@@ -69,3 +69,7 @@
 - LA-05 GROUP 03 :  Héni Kristóf - ~~Fila Norbert László~~
 - LA-05 GROUP 08 :  ~~Litauszky Zsolt~~ - Hajdu Renáta
 - LA-07 GROUP 11 :  ~~Koczka Bence~~ - Torma László Márk
+
+kriston dávid
+póta máté
+???
