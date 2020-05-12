@@ -65,11 +65,22 @@
 - LA-08 GROUP 09 :  Barkaszi Ádám István - Varga Dániel András // késve bemutatva
 - LA-08 GROUP 11 :  Sriffert Ferenc Szilveszter - Faldina Lénárd // késve bemutatva
 
+## 2020.05.06. [MK5.5] -- Videós helyzetjelentés v2
+❌ Nem adtak le mérföldkövet:
+- LA-05 GROUP 08 : Litauszky Zsolt - Hajdu Renáta
+- LA-06 GROUP 04 : Marján Kristóf - Kaló Áron Zoltán
+- LA-06 GROUP 08 : Baji Botond - Almási Patrik
+- LA-06 GROUP 10 : Mészáros Dávid
+- LA-07 GROUP 01 : Kovács Viktor - Gönczi Norbert
+- LA-07 GROUP 05 : Party Bence András - Kriston Dávid Ákos
+
+✔ Többiek (akik adtak le) rendben vannak.
+
+---
+
 ## Robbantott csapatok:
 - LA-05 GROUP 03 :  Héni Kristóf - ~~Fila Norbert László~~
 - LA-05 GROUP 08 :  ~~Litauszky Zsolt~~ - Hajdu Renáta
 - LA-07 GROUP 11 :  ~~Koczka Bence~~ - Torma László Márk
-
-kriston dávid
-póta máté
-???
+- LA-07 GROUP 05 :  ~~Party Bence András~~ - Kriston Dávid Ákos // Dávid folytatja???
+- LA-05 GROUP 10 :  Pintér Zoltán Róbert - ~~Póta Máté~~ // Máté lehet alpótra meg tudja csinálni. a csapat innentől kezdve külön váltként folytatja
