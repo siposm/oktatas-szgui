@@ -83,4 +83,4 @@
 - LA-05 GROUP 08 :  ~~Litauszky Zsolt~~ - Hajdu Renáta
 - LA-07 GROUP 11 :  ~~Koczka Bence~~ - Torma László Márk
 - LA-07 GROUP 05 :  ~~Party Bence András~~ - Kriston Dávid Ákos // Dávid folytatja???
-- LA-05 GROUP 10 :  Pintér Zoltán Róbert - ~~Póta Máté~~ // Máté lehet alpótra meg tudja csinálni. a csapat innentől kezdve külön váltként folytatja
+- LA-05 GROUP 10 :  Pintér Zoltán Róbert - Póta Máté // Zoltán menetrend szerint szeretné csinálni, Máté lehet alpótra meg tudja csinálni. a csapat innentől kezdve külön váltként folytatja
