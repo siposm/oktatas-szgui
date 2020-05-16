@@ -67,12 +67,12 @@
 
 ## 2020.05.06. [MK5.5] -- Videós helyzetjelentés v2
 ❌ Nem adtak le mérföldkövet:
-- LA-05 GROUP 08 : Litauszky Zsolt - Hajdu Renáta
-- LA-06 GROUP 04 : Marján Kristóf - Kaló Áron Zoltán
-- LA-06 GROUP 08 : Baji Botond - Almási Patrik
+- LA-05 GROUP 08 : Hajdu Renáta // késve bemutatva
+- LA-06 GROUP 04 : Marján Kristóf - Kaló Áron Zoltán // késve bemutatva
+- LA-06 GROUP 08 : Baji Botond - Almási Patrik // késve bemutatva
 - LA-06 GROUP 10 : Mészáros Dávid
 - LA-07 GROUP 01 : Kovács Viktor - Gönczi Norbert
-- LA-07 GROUP 05 : Party Bence András - Kriston Dávid Ákos
+- LA-07 GROUP 05 : Kriston Dávid Ákos
 
 ✔ Többiek (akik adtak le) rendben vannak.
 
@@ -82,5 +82,12 @@
 - LA-05 GROUP 03 :  Héni Kristóf - ~~Fila Norbert László~~
 - LA-05 GROUP 08 :  ~~Litauszky Zsolt~~ - Hajdu Renáta
 - LA-07 GROUP 11 :  ~~Koczka Bence~~ - Torma László Márk
-- LA-07 GROUP 05 :  ~~Party Bence András~~ - Kriston Dávid Ákos // Dávid folytatja???
+- LA-07 GROUP 05 :  ~~Party Bence András~~ - Kriston Dávid Ákos
 - LA-05 GROUP 10 :  Pintér Zoltán Róbert - Póta Máté // Zoltán menetrend szerint szeretné csinálni, Máté lehet alpótra meg tudja csinálni. a csapat innentől kezdve külön váltként folytatja
+
+## Jelzett késés:
+- Torma László Márk
+- Póta Máté
+
+## Egyéb jelzések:
+- Mikhel Roland : tesztek száma kevesebb lesz >> MS3 false
