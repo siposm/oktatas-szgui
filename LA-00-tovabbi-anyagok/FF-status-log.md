@@ -86,7 +86,6 @@
 
 ❌ Adtak le de Gitstat = false (tests_20200518_070523.tsv alapján):
 - LA-05 GROUP 03 : Héni Kristóf - Fila Norbert László
-- LA-05 GROUP 04 : Herczeg Kristóf István - Akácz Máté
 - LA-05 GROUP 07 : Kerekes Barnabás Imre - Nánási Nikolett
 - LA-06 GROUP 02 : Szilágyi Ádám - Drótár Adrián
 - LA-06 GROUP 10 : Mészáros Dávid
