@@ -89,8 +89,7 @@
 - LA-05 GROUP 07 : Kerekes Barnabás Imre - Nánási Nikolett
 - LA-06 GROUP 02 : Szilágyi Ádám - Drótár Adrián
 - LA-06 GROUP 10 : Mészáros Dávid
-- LA-08 GROUP 02 : Lakó Boldizsár - Mikhel Roland
-- LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid
+- LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid // várom a friss gitstat eredményt
 
 ---
 
