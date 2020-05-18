@@ -36,34 +36,34 @@
 
 ## 2020.04.20. [MK4] -- Repository, GameModel + GameLogic/Tests
 ❌ Nincs repó létrehozva egyáltalán:
-- LA-05 GROUP 04 :  Herczeg Kristóf István - Akácz Máté
-- LA-07 GROUP 01 :  Kovács Viktor - Gönczi Norbert
-- LA-07 GROUP 11 :  Koczka Bence - Torma László Márk
-- LA-08 GROUP 01 :  Baka Richárd - Mellau Vendel József
-- LA-08 GROUP 11 :  Sriffert Ferenc Szilveszter - Faldina Lénárd
+- LA-05 GROUP 04 : Herczeg Kristóf István - Akácz Máté
+- LA-07 GROUP 01 : Kovács Viktor - Gönczi Norbert
+- LA-07 GROUP 11 : Koczka Bence - Torma László Márk
+- LA-08 GROUP 01 : Baka Richárd - Mellau Vendel József
+- LA-08 GROUP 11 : Sriffert Ferenc Szilveszter - Faldina Lénárd
 
 ## 2020.04.22. [MK4.5] -- Videós helyzetjelentés
 ❌ Nincs *gameplay* bemutatva csak kódgörgetés:
-- LA-05 GROUP 03 :  Héni Kristóf - Fila Norbert László
-- LA-07 GROUP 02 :  Főző Árpád - Balázsi Edina
-- LA-07 GROUP 06 :  Anderle Dániel Attila - Reményi Damján
-- LA-08 GROUP 12 :  Lukács Andrea Eszter - Horváth Ádám
-- LA-06 GROUP 06 :  Schléger Balázs - Szalay Tamás Imre
-- LA-08 GROUP 03 :  Tomcsányi Donát - Molnár Máté
-- LA-07 GROUP 04 :  Németh Kristóf - Csáki Péter
-- LA-08 GROUP 07 :  Pirityi István - Duzmath Bálint
-- LA-05 GROUP 06 :  Horti Kristóf - Andruskó Zoltán
-- LA-07 GROUP 11 :  Koczka Bence - Torma László Márk
-- LA-07 GROUP 07 :  Hajdú András - Simon Péter
-- LA-05 GROUP 04 :  Herczeg Kristóf István - Akácz Máté
+- LA-05 GROUP 03 : Héni Kristóf - Fila Norbert László
+- LA-07 GROUP 02 : Főző Árpád - Balázsi Edina
+- LA-07 GROUP 06 : Anderle Dániel Attila - Reményi Damján
+- LA-08 GROUP 12 : Lukács Andrea Eszter - Horváth Ádám
+- LA-06 GROUP 06 : Schléger Balázs - Szalay Tamás Imre
+- LA-08 GROUP 03 : Tomcsányi Donát - Molnár Máté
+- LA-07 GROUP 04 : Németh Kristóf - Csáki Péter
+- LA-08 GROUP 07 : Pirityi István - Duzmath Bálint
+- LA-05 GROUP 06 : Horti Kristóf - Andruskó Zoltán
+- LA-07 GROUP 11 : Koczka Bence - Torma László Márk
+- LA-07 GROUP 07 : Hajdú András - Simon Péter
+- LA-05 GROUP 04 : Herczeg Kristóf István - Akácz Máté
 
 ❌ Nem adtak le mérföldkövet:
-- LA-05 GROUP 10 :  Pintér Zoltán Róbert - Póta Máté
-- LA-06 GROUP 05 :  Remzső Milán - Szabó Péter // késve bemutatva
-- LA-07 GROUP 01 :  Kovács Viktor - Gönczi Norbert
-- LA-07 GROUP 05 :  Party Bence András - Kriston Dávid Ákos // késve bemutatva
-- LA-08 GROUP 09 :  Barkaszi Ádám István - Varga Dániel András // késve bemutatva
-- LA-08 GROUP 11 :  Sriffert Ferenc Szilveszter - Faldina Lénárd // késve bemutatva
+- LA-05 GROUP 10 : Pintér Zoltán Róbert - Póta Máté
+- LA-06 GROUP 05 : Remzső Milán - Szabó Péter // késve bemutatva
+- LA-07 GROUP 01 : Kovács Viktor - Gönczi Norbert
+- LA-07 GROUP 05 : Party Bence András - Kriston Dávid Ákos // késve bemutatva
+- LA-08 GROUP 09 : Barkaszi Ádám István - Varga Dániel András // késve bemutatva
+- LA-08 GROUP 11 : Sriffert Ferenc Szilveszter - Faldina Lénárd // késve bemutatva
 
 ## 2020.05.06. [MK5.5] -- Videós helyzetjelentés v2
 ❌ Nem adtak le mérföldkövet:
@@ -76,18 +76,37 @@
 
 ✔ Többiek (akik adtak le) rendben vannak.
 
+## 2020.05.17. [MK6] [FINAL] -- /FF leadás
+❌ Nem adtak le mérföldkövet:
+- LA-05 GROUP 05 : Vékony Martin Gábor - Németh Bálint
+- LA-05 GROUP 10 : Pintér Zoltán Róbert - Póta Máté
+- LA-05 GROUP 12 : Orbán Máté Ciprián - Nyári Kinga
+- LA-07 GROUP 01 : Kovács Viktor - Gönczi Norbert
+- LA-07 GROUP 04 : Németh Kristóf - Csáki Péter
+- LA-07 GROUP 11 : ~~Koczka Bence~~ - Torma László Márk
+
+❌ Adtak le de Gitstat = false (tests_20200518_070523.tsv alapján):
+- LA-05 GROUP 03 : Héni Kristóf - Fila Norbert László
+- LA-05 GROUP 04 : Herczeg Kristóf István - Akácz Máté
+- LA-05 GROUP 07 : Kerekes Barnabás Imre - Nánási Nikolett
+- LA-06 GROUP 10 : Mészáros Dávid
+- LA-08 GROUP 02 : Lakó Boldizsár - Mikhel Roland
+- LA-08 GROUP 03 : Tomcsányi Donát - Molnár Máté
+- LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid
+
 ---
 
 ## Robbantott csapatok:
-- LA-05 GROUP 03 :  Héni Kristóf - ~~Fila Norbert László~~
-- LA-05 GROUP 08 :  ~~Litauszky Zsolt~~ - Hajdu Renáta
-- LA-07 GROUP 11 :  ~~Koczka Bence~~ - Torma László Márk
-- LA-07 GROUP 05 :  ~~Party Bence András~~ - Kriston Dávid Ákos
-- LA-05 GROUP 10 :  Pintér Zoltán Róbert - Póta Máté // Zoltán menetrend szerint szeretné csinálni, Máté lehet alpótra meg tudja csinálni. a csapat innentől kezdve külön váltként folytatja
+- LA-05 GROUP 03 : Héni Kristóf - ~~Fila Norbert László~~
+- LA-05 GROUP 08 : ~~Litauszky Zsolt~~ - Hajdu Renáta
+- LA-07 GROUP 11 : ~~Koczka Bence~~ - Torma László Márk
+- LA-07 GROUP 05 : ~~Party Bence András~~ - Kriston Dávid Ákos
+- LA-05 GROUP 10 : Pintér Zoltán Róbert - Póta Máté // Zoltán menetrend szerint szeretné csinálni, Máté lehet alpótra meg tudja csinálni. a csapat innentől kezdve külön váltként folytatja
 
 ## Jelzett késés:
 - Torma László Márk
-- Póta Máté
+- LA-05 GROUP 10 / Póta Máté
+- LA-05 GROUP 12 : Orbán Máté Ciprián - Nyári Kinga			
 
 ## Egyéb jelzések:
 - Mikhel Roland : tesztek száma kevesebb lesz >> MS3 false
