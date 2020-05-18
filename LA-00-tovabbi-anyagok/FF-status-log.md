@@ -78,7 +78,6 @@
 
 ## 2020.05.17. [MK6] [FINAL] -- /FF leadás
 ❌ Nem adtak le mérföldkövet:
-- LA-05 GROUP 05 : Vékony Martin Gábor - Németh Bálint
 - LA-05 GROUP 10 : Pintér Zoltán Róbert - Póta Máté
 - LA-05 GROUP 12 : Orbán Máté Ciprián - Nyári Kinga
 - LA-07 GROUP 01 : Kovács Viktor - Gönczi Norbert
@@ -89,9 +88,9 @@
 - LA-05 GROUP 03 : Héni Kristóf - Fila Norbert László
 - LA-05 GROUP 04 : Herczeg Kristóf István - Akácz Máté
 - LA-05 GROUP 07 : Kerekes Barnabás Imre - Nánási Nikolett
+- LA-06 GROUP 02 : Szilágyi Ádám - Drótár Adrián
 - LA-06 GROUP 10 : Mészáros Dávid
 - LA-08 GROUP 02 : Lakó Boldizsár - Mikhel Roland
-- LA-08 GROUP 03 : Tomcsányi Donát - Molnár Máté
 - LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid
 
 ---
