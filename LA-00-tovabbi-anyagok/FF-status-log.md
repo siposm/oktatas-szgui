@@ -108,5 +108,6 @@
 - LA-07 GROUP 08 : Hanula Benedek - Tumpek Dávid
 - LA-07 GROUP 09 : Józsa Dávid László - Kalmár Dániel
 - LA-08 GROUP 01 : Baka Richárd - Mellau Vendel József
+- LA-08 GROUP 04 : Bartos Csanád - Bodor Sándor
 - LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid
 - LA-08 GROUP 12 : Horváth Ádám
