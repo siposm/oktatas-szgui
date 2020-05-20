@@ -89,19 +89,13 @@
 - LA-05 GROUP 07 : Kerekes Barnabás Imre - Nánási Nikolett
 - LA-06 GROUP 02 : Szilágyi Ádám - Drótár Adrián
 - LA-06 GROUP 10 : Mészáros Dávid
-- LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid // várom a friss gitstat eredményt
 
 ## Robbantott csapatok:
 - LA-05 GROUP 03 : Héni Kristóf - ~~Fila Norbert László~~
 - LA-05 GROUP 08 : ~~Litauszky Zsolt~~ - Hajdu Renáta
 - LA-07 GROUP 11 : ~~Koczka Bence~~ - Torma László Márk
 - LA-07 GROUP 05 : ~~Party Bence András~~ - Kriston Dávid Ákos
-- LA-05 GROUP 10 : Pintér Zoltán Róbert - Póta Máté // Zoltán menetrend szerint szeretné csinálni, Máté lehet alpótra meg tudja csinálni. a csapat innentől kezdve külön váltként folytatja
-
-## Jelzett késés:
-- LA-07 GROUP 11 : ~~Koczka Bence~~ - Torma László Márk
-- LA-05 GROUP 10 / Póta Máté
-- LA-05 GROUP 12 : Orbán Máté Ciprián - Nyári Kinga			
+- LA-05 GROUP 10 : Pintér Zoltán Róbert - Póta Máté // Zoltán menetrend szerint szeretné csinálni, Máté lehet alpótra meg tudja csinálni. a csapat innentől kezdve külön váltként folytatja >> nem jött menetrend szerint, alpótra közösen vagy külön?
 
 ## Egyéb jelzések:
 - Mikhel Roland : tesztek száma kevesebb lesz >> MS3 false
