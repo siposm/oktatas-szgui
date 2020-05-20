@@ -98,7 +98,7 @@
 - LA-05 GROUP 10 : Pintér Zoltán Róbert - Póta Máté // Zoltán menetrend szerint szeretné csinálni, Máté lehet alpótra meg tudja csinálni. a csapat innentől kezdve külön váltként folytatja >> nem jött menetrend szerint, alpótra közösen vagy külön?
 
 ## 👌 Versenyre jelölt csapatok
-- ** levettem a linket, a 2 embernek aki maradt kikerestem a leadott anyagokból **
+- **levettem a linket, a 2 embernek aki maradt kikerestem a leadott anyagokból**
 - LA-05 GROUP 05 : Vékony Martin Gábor - Németh Bálint
 - LA-05 GROUP 09 : Nagy Botond - Kucsera Gergő
 - LA-06 GROUP 04 : Marján Kristóf - Kaló Áron Zoltán
