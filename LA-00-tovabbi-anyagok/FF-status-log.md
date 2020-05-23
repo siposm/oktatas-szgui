@@ -99,15 +99,11 @@
 
 ## 👌 Versenyre jelölt csapatok
 - **levettem a linket, a 2 embernek aki maradt kikerestem a leadott anyagokból**
-- LA-05 GROUP 05 : Vékony Martin Gábor - Németh Bálint
 - LA-05 GROUP 09 : Nagy Botond - Kucsera Gergő
 - LA-06 GROUP 04 : Marján Kristóf - Kaló Áron Zoltán
 - LA-06 GROUP 08 : Baji Botond - Almási Patrik
-- LA-07 GROUP 02 : Főző Árpád - Balázsi Edina
 - LA-07 GROUP 03 : Molnár Dóra Katalin - Szabó Zoltán
-- LA-07 GROUP 08 : Hanula Benedek - Tumpek Dávid
 - LA-07 GROUP 09 : Józsa Dávid László - Kalmár Dániel
-- LA-08 GROUP 01 : Baka Richárd - Mellau Vendel József
 - LA-08 GROUP 04 : Bartos Csanád - Bodor Sándor
 - LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid
 - LA-08 GROUP 12 : Horváth Ádám
