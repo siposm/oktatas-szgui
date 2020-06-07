@@ -107,15 +107,10 @@
 - LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid
 - LA-08 GROUP 12 : Horváth Ádám
 
-## ✅️ Nyertes / helyezett csapatok (sorrendben):
+## ✅️ Nyertes csapatok (sorrendben):
 - LA-06 GROUP 04 : Marján Kristóf - Kaló Áron Zoltán
 - LA-08 GROUP 12 : Horváth Ádám
 - LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid
-- LA-08 GROUP 04 : Bartos Csanád - Bodor Sándor
-- LA-07 GROUP 09 : Józsa Dávid László - Kalmár Dániel
-- LA-07 GROUP 03 : Molnár Dóra Katalin - Szabó Zoltán
-- LA-05 GROUP 09 : Nagy Botond - Kucsera Gergő
-- LA-06 GROUP 08 : Baji Botond - Almási Patrik
 - src: http://users.nik.uni-obuda.hu/prog4/CompetitionPics/Prog4Verseny_2020_Results.pdf
 
 ## Alpót:
