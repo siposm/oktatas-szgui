@@ -97,7 +97,7 @@
 - LA-07 GROUP 05 : ~~Party Bence András~~ - Kriston Dávid Ákos
 - LA-05 GROUP 10 : Pintér Zoltán Róbert - ~~Póta Máté~~
 
-## 👌 Versenyre jelölt csapatok
+## 👌 Versenyre jelölt csapatok:
 - LA-05 GROUP 09 : Nagy Botond - Kucsera Gergő
 - LA-06 GROUP 04 : Marján Kristóf - Kaló Áron Zoltán
 - LA-06 GROUP 08 : Baji Botond - Almási Patrik
@@ -107,7 +107,7 @@
 - LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid
 - LA-08 GROUP 12 : Horváth Ádám
 
-## ✅️ Nyertes / helyezett csapatok (sorrendben)
+## ✅️ Nyertes / helyezett csapatok (sorrendben):
 - LA-06 GROUP 04 : Marján Kristóf - Kaló Áron Zoltán
 - LA-08 GROUP 12 : Horváth Ádám
 - LA-08 GROUP 08 : Banzragch Uchral - Turóczi Dávid
@@ -117,3 +117,5 @@
 - LA-05 GROUP 09 : Nagy Botond - Kucsera Gergő
 - LA-06 GROUP 08 : Baji Botond - Almási Patrik
 - src: http://users.nik.uni-obuda.hu/prog4/CompetitionPics/Prog4Verseny_2020_Results.pdf
+
+## Alpót:
