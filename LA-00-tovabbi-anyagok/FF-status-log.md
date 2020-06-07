@@ -114,3 +114,11 @@
 - src: http://users.nik.uni-obuda.hu/prog4/CompetitionPics/Prog4Verseny_2020_Results.pdf
 
 ## Alpót:
+- LA-05 GROUP 03 :  Héni Kristóf - Fila Norbert László
+- LA-05 GROUP 07 :  Kerekes Barnabás Imre - Nánási Nikolett
+- LA-06 GROUP 02 :  Szilágyi Ádám - Drótár Adrián
+- LA-07 GROUP 04 :  Németh Kristóf - Csáki Péter
+- LA-07 GROUP 11 :  Koczka Bence - Torma László Márk
+- LA-08 GROUP 12 :  Lukács Andrea Eszter
+- LA-05 GROUP 10 :  Pintér Zoltán Róbert // nincs videó leadva
+- LA-05 GROUP 12 :  Orbán Máté Ciprián - Nyári Kinga // nincs videó leadva
