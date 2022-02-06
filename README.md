@@ -1,6 +1,6 @@
 ## 📄 Official requirements
-- SzGUI HUN (2021-22-2): https://nik.uni-obuda.hu/targyleirasok/tantargyak/szoftvertechnologia-es-grafikus-felhasznaloi-interfesz-tervezese-3/
-- STGUI ENG (2021-22-2): https://nik.uni-obuda.hu/targyleirasok/tantargyak/software-technology-and-graphical-user-interface-design-3/
+- SzGUI HUN (2021-22-2): [here](https://nik.uni-obuda.hu/targyleirasok/tantargyak/szoftvertechnologia-es-grafikus-felhasznaloi-interfesz-tervezese-3/)
+- STGUI ENG (2021-22-2): [here](https://nik.uni-obuda.hu/targyleirasok/tantargyak/software-technology-and-graphical-user-interface-design-3/)
 
 <br><br>
 
