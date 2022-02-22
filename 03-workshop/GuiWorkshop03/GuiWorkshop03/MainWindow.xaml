@@ -1,0 +1,61 @@
+﻿<Window x:Class="GuiWorkshop03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuiWorkshop03"
+        xmlns:vm="clr-namespace:GuiWorkshop03.ViewModels"
+        xmlns:srv="clr-namespace:GuiWorkshop03.Services"
+        mc:Ignorable="d"
+        Title="Army Editor" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:MainWindowsViewModel x:Name="vm"/>
+    </Window.DataContext>
+    <Window.Resources>
+        <srv:ProgressBarColorConverter x:Key="colorConverter" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox ItemsSource="{Binding Troopers}" SelectedItem="{Binding SelectedFromTrooper}" HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label Content="{Binding Type}" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="1*" />
+                            </Grid.ColumnDefinitions>
+                            <ProgressBar Maximum="10" Value="{Binding Power}" Foreground="{Binding Power, Converter={StaticResource colorConverter}}" Height="10" Margin="10" />
+                            <ProgressBar Maximum="10" Value="{Binding Vitality}" Foreground="{Binding Vitality, Converter={StaticResource colorConverter}}" Height="10" Grid.Column="1" Margin="10" />
+                            <ProgressBar Maximum="10" Value="{Binding Cost}" Foreground="{Binding Cost, Converter={StaticResource colorConverter}}" Height="10" Grid.Column="2" Margin="10" />
+                        </Grid>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="1">
+            <Label Content="{Binding Money}" ContentStringFormat="Money: {0}$" HorizontalContentAlignment="Center" />
+            <Button Content="Add To Army" Margin="10" Padding="10" Click="Button_Click" />
+            <Button Content="Remove From Army" Margin="10" Padding="10" Click="Button_Click_1" />
+            <Button Content="Edit trooper" Margin="10" Padding="10" Click="Button_Click_2" />
+        </StackPanel>
+        <ListBox ItemsSource="{Binding Army}" Grid.Column="2" SelectedItem="{Binding SelectedFromArmy}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="{Binding Type}" />
+                        <Label Content="{Binding Power}" />
+                        <Label Content="{Binding Vitality}" />
+                        <Label Content="{Binding Cost}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

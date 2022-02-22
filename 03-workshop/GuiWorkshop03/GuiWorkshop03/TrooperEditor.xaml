@@ -1,0 +1,18 @@
+﻿<Window x:Class="GuiWorkshop03.TrooperEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuiWorkshop03"
+        mc:Ignorable="d"
+        Title="TrooperEditor" Height="308" Width="357">
+    <StackPanel x:Name="stack">
+        <Label Content="Power" Padding="10" Background="LightBlue" />
+        <TextBox Text="{Binding Power, UpdateSourceTrigger=Explicit}" Padding="10"/>
+        <Label Content="Vitality" Padding="10" Background="LightBlue" />
+        <TextBox Text="{Binding Vitality, UpdateSourceTrigger=Explicit}" Padding="10"/>
+        <Label Content="Cost" Padding="10" Background="LightBlue" />
+        <TextBox Text="{Binding Cost, UpdateSourceTrigger=Explicit}" Padding="10"/>
+        <Button Content="Save" Click="Button_Click" Padding="10" />
+    </StackPanel>
+</Window>
