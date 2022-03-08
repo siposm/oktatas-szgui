@@ -1,0 +1,1 @@
+A 05-ös alkalomhoz nem tartozik feladatlap illetve kód. Ezen az alkalmon a WPF házi feladat elkezdése volt a feladat, amelyben a HFT féléves feladatának API-ját kellett felhasználni és egy WPF-es kliens alkalmazást készíteni, amely az említett API-kat használja.
