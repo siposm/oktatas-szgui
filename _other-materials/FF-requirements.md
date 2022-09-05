@@ -29,4 +29,4 @@ Ahogy a tantárgyi követelményekben is olvasható, a 14. heti laboralkalmon k�
 
 ## Verseny
 
-Laboronként a top 3 helyezést elért csapatok évfolyam szinten is megmérettetnek. A laborban kialakult végeredmény után, az ott top3 helyezett csapat egy 3 perces videót kell, hogy készítsenek. A videó leadásával kapcsolatos részletek később lesznek kihirdetve. A végső nagy versenyen jó helyezést elért csapatok a követelményben leírtaknak megfelelően lesznek jutalmazva.
+Laboronként a top 3 helyezést elért csapatok évfolyam szinten is megmérettetnek. A laborban kialakult végeredmény után, az ott top3 helyezett csapatok egy 3 perces videót kell, hogy készítsenek. A videó leadásával kapcsolatos részletek később lesznek kihirdetve. A végső nagy versenyen jó helyezést elért csapatok a követelményben leírtaknak megfelelően lesznek jutalmazva.
