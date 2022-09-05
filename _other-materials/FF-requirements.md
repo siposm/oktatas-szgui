@@ -4,7 +4,7 @@
 
 A hallgatóknak egy játékot kell fejleszteniük WPF-ben a tanult technikák (FrameworkElement) segítségével! A csapatokat 3 fő alkotja, melyeket a laborvezető határoz meg és a tagoknak egy kurzushoz kell tartozniuk.
 
-A játékot Git verziókövető rendszer segítségével kell elkészíteni és a github.com oldalon hostolni. A repository neve: `GUI_2022_23_01_ABC123`, ahol az `ABC123` helyére a csapatkapitány neptun kódját kell írni. 
+A játékot Git verziókövető rendszer segítségével kell elkészíteni és a github.com oldalon hostolni. A repository neve: `GUI_2022_23_01_ABC123`, ahol az `ABC123` helyére a csapatkapitány neptun kódját kell írni végig nagybetűkkel.
 
 A repository-ba fel kell venni az `oenikprog` felhasználót collaboratorként és a gyakorlatvezető tanár saját github accountját is!
 
@@ -29,4 +29,4 @@ Ahogy a tantárgyi követelményekben is olvasható, a 14. heti laboralkalmon k�
 
 ## Verseny
 
-Laboronként a top 3 helyezést elért csapatok évfolyam szinten is megmérettetnek.
+Laboronként a top 3 helyezést elért csapatok évfolyam szinten is megmérettetnek. A laborban kialakult végeredmény után, az ott top3 helyezett csapat egy 3 perces videót kell, hogy készítsenek. A videó leadásával kapcsolatos részletek később lesznek kihirdetve. A végső nagy versenyen jó helyezést elért csapatok a követelményben leírtaknak megfelelően lesznek jutalmazva.
