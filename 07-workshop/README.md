@@ -1,1 +1,0 @@
-A 07-es alkalomhoz kód nem tartozik, de a tananyag 7-es moduljának kódja alapján megvalósítható a kiírt feladat.
