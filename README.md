@@ -11,7 +11,7 @@ This repository contains lab materials, codes, lecture slides and all the other 
 <br><br>
 
 ## 📄 Official requirements
-- [SzGUI HUN (2021-22-2)](https://nik.uni-obuda.hu/targyleirasok/tantargyak/szoftvertechnologia-es-grafikus-felhasznaloi-interfesz-tervezese-3/)
+- [SzGUI HUN (2022-23-1)](https://nik.uni-obuda.hu/targyleirasok/wp-content/uploads/2022/06/SZTGUI_2022-23-I_Nap.pdf)
 - [STGUI ENG (2021-22-2)](https://nik.uni-obuda.hu/targyleirasok/tantargyak/software-technology-and-graphical-user-interface-design-3/)
 
 <br><br>
@@ -27,6 +27,6 @@ Bármi kérdés, probléma vagy meglátás esetén állok rendelkezésre az alá
 **Sipos Miklós**\
 Tanszéki Mérnök\
 sipos.miklos@nik.uni-obuda.hu\
-https://users.nik.uni-obuda.hu/siposm \
+https://nik.siposm.hu \
 Óbudai Egyetem Neumann János Informatikai Kar\
 Szoftvertervezés és -fejlesztés Intézet\
