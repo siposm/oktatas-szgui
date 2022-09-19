@@ -1,0 +1,60 @@
+﻿*{
+    font-size: 1.05em;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.4em;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+#formdiv, #gamediv, #startdiv {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#gamediv {
+    display: none;
+}
+
+#formdiv input, label, button, #gamediv input, label, button {
+    margin: 5px;
+}
+
+#formdiv button, #gamediv button {
+    padding: 10px;
+}
+
+#start_game_button {
+    margin: 5px;
+    padding: 10px;
+}
+
+#formdiv label, #gamediv label {
+    font-weight: bolder;
+}
+
+#formdiv input, #gamediv input {
+    padding: 6px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}

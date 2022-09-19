@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="formdiv">
+    <h1>Input words</h1>
+    <label>Hungarian word</label>
+    <input type="text" id="i_hun" />
+    <label>English word</label>
+    <input type="text" id="i_eng" />
+    <button onclick="create()" type="button">Add word</button>
+    <button id="start_game_button" onclick="startGame()">START GAME</button>
+</div>
+
+<table id="wordtable">
+    <thead>
+    <tr>
+        <th>Hungarian word</th>
+        <th>English word</th>
+    </tr>
+    </thead>
+    <tbody id="tablerows">
+    </tbody>
+</table>
+
+<div id="gamediv">
+    <h1>Word game</h1>
+    <label id="score_label"></label>
+    <label id="hun_game_word"></label>
+    <input type="text" id="i_eng_game"/>
+    <button id="btn_next" onclick="gameNextClick()" type="button">Check</button>
+    <button id="btn_finish" onclick="endGame()" type="button">End Game</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
