@@ -29,4 +29,4 @@ Tanszéki Mérnök\
 sipos.miklos@nik.uni-obuda.hu\
 https://nik.siposm.hu \
 Óbudai Egyetem Neumann János Informatikai Kar\
-Szoftvertervezés és -fejlesztés Intézet\
+Szoftvertervezés és -fejlesztés Intézet
