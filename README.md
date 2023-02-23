@@ -11,8 +11,8 @@ This repository contains lab materials, codes, lecture slides and all the other 
 <br><br>
 
 ## 📄 Official requirements
-- [SzGUI HUN (2022-23-1)](https://nik.uni-obuda.hu/targyleirasok/wp-content/uploads/2022/06/SZTGUI_2022-23-I_Nap.pdf)
-- [STGUI ENG (2021-22-2)](https://nik.uni-obuda.hu/targyleirasok/tantargyak/software-technology-and-graphical-user-interface-design-3/)
+- ~~[SzGUI HUN (2022-23-1)](https://nik.uni-obuda.hu/targyleirasok/wp-content/uploads/2022/06/SZTGUI_2022-23-I_Nap.pdf)~~
+- [STGUI ENG (2022-23-2)](https://nik.uni-obuda.hu/targyleirasok/tantargyak/software-technology-and-graphical-user-interface-design-5/)
 
 <br><br>
 
